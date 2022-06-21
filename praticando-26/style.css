@@ -1,0 +1,407 @@
+/* CONFIGURAÇÕES GLOBAIS */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* PALETA DE CORES */
+:root {
+
+    --cor0: #FFFFFF;
+    --cor1: #706255;
+    --cor2: #413831;
+    --cor3: #d93e39;
+    --cor4: #453C34;
+}
+
+/* CORPO */
+body {
+    font: 12px/1.7 Helvetica, Arial, Tahoma, sans-serif;
+    background-color: var(--cor0);
+}
+
+/* CONTAINER */
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+/* DIV REDE SOCIAL */
+.redeSocial  {
+    background-image: url(imagens/header-bg.jpg);
+    padding: 18px 20px 20px 20px;
+}
+
+.redeSocial img {
+    margin-right: 5px;
+}
+
+/* CABEÇALHO */
+.cabecalho {
+    background-color: var(--cor2);
+    padding: 32px;
+}
+
+.cabecalho .cabecalhoMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho .cabecalhoMenu img {}
+
+/* NAV */
+.cabecalho .cabecalhoMenu .cabecalhoNav {
+    display: flex;
+}
+
+.cabecalho .cabecalhoMenu .cabecalhoNav a {
+    color: var(--cor0);
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 25px; 
+}
+
+.cabecalho .cabecalhoMenu .cabecalhoNav a:hover {
+    color: #d8c0a8;
+}
+
+/* SUB MENU */
+.subMenu {
+ 
+}
+
+.subMenu p {
+    display: inline-block;
+    color: var(--cor0);
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-left: 28px;
+    margin-right: 5px;
+    cursor: default;
+}
+
+.subMenu #pEspecial {
+    margin-right: 60px;
+}
+
+.subMenu p:hover {
+    color: #d8c0a8;
+}
+.subMenu:hover .listaSubMenu {
+    display: block;
+}
+
+.subMenu p:hover {
+    transition: 0.5s;
+}
+
+.subMenu .listaSubMenu {
+    display: none;
+    width: 160px;
+    list-style: none;
+    background-color: var(--cor2);
+    left: 825px;
+    position: absolute;
+    box-shadow: 2px 2px 2px 0px rgb(0 0 0 / 10%);
+}
+
+.subMenu .listaSubMenu .itemSubMenu {
+    border-bottom: 1px solid #534a42;
+    padding: 9px 0px;
+}
+
+.subMenu .listaSubMenu .itemSubMenu a {
+    font-size: 14px;
+}
+
+/* SUB MENU 2 */
+.subMenu2 {}
+
+.subMenu2 p {
+    display: inline-block;
+    color: var(--cor0);
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-left: 28px;
+    cursor: default;
+    margin-right: 5px;
+}
+
+.subMenu2 p:hover {
+    color: #d8c0a8;
+}
+.subMenu2:hover .listaSubMenu2 {
+    display: block;
+}
+
+.subMenu2 .listaSubMenu2 {
+    display: none;
+    width: 141px;
+    list-style: none;
+    background-color: var(--cor2);
+    left: 927px;
+    position: absolute;
+    box-shadow: 2px 2px 2px 0px rgb(0 0 0 / 10%);
+}
+
+.subMenu2 .listaSubMenu2 .itemSubMenu2 {
+    border-bottom: 1px solid #534a42;
+    padding: 9px 0px;
+    margin-left: -11px;
+}
+
+.subMenu2 .listaSubMenu2 .itemSubMenu2 a {
+    font-size: 14px;
+}
+
+/* SUB SUB MENU */
+.subSubMenu:hover .listaSubSubMenu {
+    display: block;
+}
+
+.subSubMenu .listaSubSubMenu {
+    position: absolute;
+    list-style: none;
+    left: 160px;
+    display: none;
+    width: 141px;
+    top: 128px;
+    box-shadow: 0px 0px 1px black;
+    background-color: var(--cor2);
+}
+
+.subSubMenu .listaSubSubMenu .itemSubSubMenu {
+    border-bottom: 1px solid #534a42;
+    padding: 9px 0px;
+}
+
+.subSubMenu .listaSubSubMenu .itemSubSubMenu a {
+    font-size: 14px;
+}
+
+
+/* CONTEÚDO PRINCIPAL */
+main {}
+
+/* SEÇÃO SLIDE */
+.secaoSlide {
+    background-color: var(--cor1);
+    padding: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.708);
+    border-top: 1px solid rgba(0, 0, 0, 0.708);
+}
+.secaoSlide img {}
+
+/* SEÇÃO SOBRE NÓS */
+.secaoNos {
+    margin-bottom: 30px;
+}
+
+.secaoNos .listaNos {
+    list-style: none;
+    display: flex;
+    padding: 5px;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.secaoNos .listaNos .itemNos {}
+
+.secaoNos .listaNos .itemNos .imagemTitulo {
+    display: flex;
+    background-color: var(--cor1);
+    padding: 15px 10px;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.secaoNos .listaNos .itemNos .imagemTitulo img {}
+
+.secaoNos .listaNos .itemNos .imagemTitulo h2 {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+}
+
+.secaoNos .listaNos .itemNos p {
+    color: var(--cor1);
+    line-height: 24px;
+    font-size: 12px;
+}
+
+.secaoNos .listaNos .itemNos p a {
+    color: var(--cor3);
+    text-decoration: none;
+}
+
+.secaoNos .listaNos .itemNos p a:hover {
+    text-decoration: underline;
+}
+
+/* SEÇÃO TRABALHO */
+.secaoTrabalho {
+    margin-bottom: 60px;
+}
+
+.secaoTrabalho h2 {
+    font-weight: bold;
+    font-size: 1.9em;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #5e52486d;
+    margin-bottom: 20px;
+    color: #453C34;
+}
+
+.secaoTrabalho .listaTrabalho {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.secaoTrabalho .listaTrabalho .itemTrabalho {
+    padding: 5px;
+}
+
+.secaoTrabalho .listaTrabalho .itemTrabalho img {
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+
+.secaoTrabalho .listaTrabalho .itemTrabalho a {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #262626;
+}
+
+.secaoTrabalho .listaTrabalho .itemTrabalho a:hover {
+    text-decoration: underline;
+    color: var(--cor3);
+}
+
+/* SEÇÃO ASIDE */
+.secaoAside {
+    background-color: var(--cor1);
+    padding-top: 30px;
+}
+
+.secaoAside .conteudoPeriferico {
+    display: flex;
+    gap: 20px;
+}
+
+.secaoAside .conteudoPeriferico .aboutUs {
+    width: 460px;
+}
+
+.secaoAside .conteudoPeriferico .aboutUs h2 {
+    color: var(--cor0);
+    font-weight: lighter;
+    font-size: 1.9em;
+    border-bottom: 1px solid var(--cor0);
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+}
+
+.secaoAside .conteudoPeriferico .aboutUs p {
+    line-height: 24px;
+    color: var(--cor0);
+    margin-bottom: 20px;
+}
+
+.secaoAside .conteudoPeriferico .whyUs {
+    width: 460px;
+}
+
+.secaoAside .conteudoPeriferico .whyUs h2 {
+    margin-bottom: 35px;
+    color: var(--cor0);
+    font-weight: lighter;
+    font-size: 1.9em;
+    border-bottom: 1px solid var(--cor0);
+    padding-bottom: 10px;
+}
+
+.secaoAside .conteudoPeriferico .whyUs .logoParagrafo {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.secaoAside .conteudoPeriferico .whyUs .logoParagrafo img {}
+
+.secaoAside .conteudoPeriferico .whyUs .logoParagrafo p {
+    color: var(--cor0);
+    line-height: 22px;
+}
+
+.secaoAside .tamplate {}
+
+.secaoAside .tamplate h2 {
+    margin-bottom: 15px;
+    color: var(--cor0);
+    font-weight: lighter;
+    font-size: 1.9em;
+    border-bottom: 1px solid var(--cor0);
+}
+
+.secaoAside .tamplate p {
+    color: var(--cor0);
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.secaoAside .tamplate button {
+    background: -webkit-gradient( linear, left top, left bottom, from(#88b272), color-stop(0.50, #7fab68), to(#6c9b55));
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 70px;
+    border: 1px solid rgba(0, 0, 0, 0.461);
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.356);
+}
+
+.secaoAside .tamplate button:hover {
+    background: -webkit-gradient( linear, left top, left bottom, from(#6c9b55), color-stop(0.50, #7fab68), to(#88b272));
+}
+
+/* RODAPÉ */
+.rodape {
+    background-color: var(--cor2);
+    padding: 20px;
+}
+
+.rodape  a {
+    margin-bottom: 20px;
+    display: inline-block;
+    color: var(--cor0);
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 35px;
+}
+
+.rodape a:hover {
+    color: #c8b099;
+}
+
+.rodape p {
+    color: var(--cor1);
+    font-size: 11px;
+}
+
+.rodape p  #linkEspecial {
+    color: var(--cor1);
+}
+
+#linkEspecial:hover {
+    text-decoration: underline;
+}

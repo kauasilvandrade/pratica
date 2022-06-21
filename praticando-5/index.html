@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, #0CF25D, #038C3E, #02735E, #025951, #034159);
+        }
+
+        section{
+            background-color: #ffffff;
+            padding: 13px;
+            margin-bottom: 10px;
+            border: 5px solid black;
+            width: 600px;
+            display: inline-block;
+            box-shadow: 5px 5px 15px #01151dc7;
+        }
+
+        section > div{
+            display: none;
+        }
+
+        section:hover > div{
+            display: block;
+            transition: 5s;
+        }
+
+        h1,h2{
+            text-align: center;
+            color: rgb(26, 23, 23);
+            text-shadow: 2px 2px 6px rgb(70, 69, 69);
+        }
+
+        #strong ,#mark, #del, #sup{
+            margin-left: 100px;
+            margin-right: 10px;
+        }
+    </style>
+    <title>Formatações</title>
+</head>
+<body>
+
+    <h1>Formatações de textos</h1>
+
+    <section id="strong">
+        <h2>Tag &lt;STRONG&gt;</h2>
+        <div>
+            <p>A tag <strong>&lt;STRONG&gt;</strong>serve para deixar um palavra em negrito. Usamos isso para dar significado a algo.</p>
+            <h3>Exemplo:</h3>
+            <p>Knull é <strong>muito forte</strong>.</p>
+        </div>
+    </section>
+
+    <section id="italic">
+        <h2>Tag &lt;EM&gt;</h2>
+        <div>
+            <p>A tag &lt;<em>em</em>&gt; é usada para dar ênfase a alguma palavra deixando ela em itálico.</p>
+            <h3>Exemplo:</h3>
+            <p>Em HTML 5, o que anteriormente era chamado de conteúdo<em>block-level</em> agora é chamado de conteúdo<em> flow</em>.</p>
+        </div>
+    </section>
+
+    <section id="mark">
+        <h2>Tag &lt;MARK&gt;</h2>
+        <div>
+            <p>Usamos a tag &lt;<mark>mark</mark>&gt; para marcar um texto.</p>
+            <h3>Exemplo:</h3>
+            <p>PENSA <mark>MARK</mark>!</p>
+        </div>
+    </section>
+
+    <section id="small">
+        <h2>Tag &lt;SMAL&gt;</h2>
+        <div>
+            <p>A tag &lt;<small>small</small>&gt; é usado para deixar um texto pequeno.</p>
+            <h3>Exemplo:</h3>
+            <p>Esse texto esta <small>pequeno</small>.</p>
+        </div>
+    </section>
+
+    <section id="del">
+        <h2>Tag &lt;DEl&gt;</h2>
+        <div>
+            <p>A tag &lt;<del>del</del>&gt; é usada para indicar um texto excluido mas não vai ser considerado.</p>
+            <h3>Exemplo:</h3>
+            <p>Todos vocês vão ser <del>executados</del>.</p>
+        </div>
+    </section>
+
+    <section id="ins">
+        <h2>Tag &lt;INS&gt;</h2>
+        <div>
+            <p>A tag <ins>&lt;ins&gt;</ins> é usada para dar uma ênfase e indicar que ele foi adicionado depois.</p>
+            <h3>Exemplo:</h3>
+            <p>O <ins>título</ins> de uma história é muito importante.</p>
+        </div>
+    </section>
+
+    <section id="sup">
+        <h2>Tag &lt;SUP&gt;</h2>
+        <div>
+            <p>A tag é &lt;<sup>sup</sup>&gt; usada para escrever coisas do tipo x<sup>2</sup>+3</p>
+            <h3>Exemplo:</h3>
+            <p>A<sup>2</sup> + B<sup>2</sup> = x</p>
+        </div>
+    </section>
+
+    <section id="sub">
+        <h2>Tag &lt;SUB&gt;</h2>
+        <div>
+            <p>A tag &lt;<sub>sub</sub>&gt; é usada para escrever coisas do tipo H<sub>2</sub>O</p>
+            <h3>Exemplo:</h3>
+            <p>CO<sub>2</sub></p>
+        </div>
+    </section>
+
+</body>
+</html>

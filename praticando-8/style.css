@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600;700&display=swap');
+
+/* RESET CSS */
+*{
+    margin: 0;
+    box-sizing: none;
+}
+
+/* CORPO */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* MENU */
+header{
+    background-image: linear-gradient(to top, #0466A8, #098BBD, #26B6DA, #28C5D9);
+}
+
+#principal{
+    text-align: center;
+    font-size: 33px;
+    padding-top: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+
+nav{
+    background-color: #128ebe;
+    margin-top: 49px;
+    height: 35px;
+    padding-top: 14px;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+li{
+    list-style: none;
+    font-size: 17px;
+}
+
+
+.link{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* CONTEÚDO PRICIPAL */
+main{
+    background-color: #42c5d6;
+}
+
+h1{
+    text-align: center;
+    padding-top: 12px;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+section{
+    background-color: white;
+    display: inline-block;
+    margin: 19px;
+    margin-left: 101px;
+    border-radius: 13px;
+}
+
+div{
+    display: inline-block;
+    padding: 0px 23px 48px 23px;
+}
+
+p{
+    margin-bottom: 15px;
+}
+
+h2{
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 600;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+p{
+    font-family: 'Asap', sans-serif;
+}
+
+/* FOOTER */
+footer{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    background-color: #057cca;
+    height: 69px;
+}
+
+h3{
+    padding-top: 23px;
+}

@@ -1,0 +1,379 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* PALETA DE CORES */
+:root {
+    --cor0: #ffffff;
+    --cor11: #1f74e4;
+    --cor1: #049DD9;
+    --cor2: #04B2D9;
+    --cor3: #0487D9;
+    --cor4: #034AA6;
+    --cor5: #043779;
+    --cor6: #1D2426;
+}
+
+/* CONFIGURAÇÕES GLOBAIS */
+* {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    box-sizing: border-box;
+}
+
+/* CORPO */
+body {
+    background-image: linear-gradient(to bottom, var(--cor5),var(--cor4), var(--cor3), var(--cor2));
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body::-webkit-scrollbar {
+    background-color: var(--cor1);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--cor4);
+    border-radius: 5px;
+}
+
+.container {
+    width: 900px;
+    margin: auto;
+}
+
+/* CABEÇALHO */
+.cabecalho {
+    min-height: 120px;
+    padding: 20px 10px;
+    background-image: linear-gradient(to top, var(--cor5), var(--cor3));
+}
+
+.cabecalho .positionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho .positionHeader > img {
+    width: 100px;
+    cursor: pointer;
+}
+
+.cabecalho .positionHeader .menu {
+    display: flex;
+    gap: 15px;
+}
+
+.cabecalho .positionHeader .menu a {
+    text-decoration: none;
+    color: var(--cor0);
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.cabecalho .positionHeader .menu a:hover {
+    background-color: var(--cor3);
+    color: var(--cor5);
+    padding: 10px;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.cabecalho .positionHeader .menu .barraPesquisar {
+    position: relative;
+}
+
+.cabecalho .positionHeader .menu .barraPesquisar svg {
+    width: 20px;
+    position: absolute;
+    left: 5%;
+    color: var(--cor5);
+    top: 18%;
+}
+.cabecalho .positionHeader .menu .barraPesquisar svg:hover {
+    cursor: pointer;
+}
+
+.cabecalho .positionHeader .menu .barraPesquisar input {
+    padding: 10px 0px 10px 43px;
+    border-radius: 6px;
+}
+
+
+@media (max-width: 940px) and (min-width: 800px) {
+    nav {
+        width: 652px;
+    }
+
+    .listaJogos {
+        width: 400px;
+    }
+}
+
+/* SEÇÃO BANNER */
+.secaoBanner {
+    margin-bottom: 40px;
+}
+
+.secaoBanner img {
+    width: 100%;
+    max-height: 600px;
+}
+
+
+/* CONTEÚDO PRINCIPAL */
+.conteudoPrincipal {
+    background-color: var(--cor0);
+    max-width: 1000px;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 1px 0px 9px rgba(0, 0, 0, 0.752);
+    padding: 15px;
+    padding-bottom: 185px;
+    padding-bottom: 70px;
+}
+
+/* SEÇÃO NOVOS LANÇAMENTOS */
+.secaoNovoLancamento {}
+
+.secaoNovoLancamento h1 {
+    margin: 10px 0px;
+    padding: 5px 0px;
+    font-size: 2.5em;
+    color: var(--cor6);
+    border-bottom: 1px solid var(--cor6);
+}
+
+.secaoNovoLancamento p {
+    font-size: 1.2em;
+    margin: 10px 0px 20px 0px;
+}
+
+.secaoNovoLancamento .listaJogos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 33px;
+    list-style: none;
+}
+
+.secaoNovoLancamento .listaJogos .jogo {
+    width: 200px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.secaoNovoLancamento .listaJogos .jogo:hover {
+    background-color: #049dd94b;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.secaoNovoLancamento .listaJogos .jogo img {
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.secaoNovoLancamento .listaJogos .jogo h2 {
+    font-size: 1.1em;
+    text-align: center;
+    font-weight: normal;
+}
+
+/* SEÇÃO DE ANÚNCIO PLANO */
+.secaoAnuncio {
+    background-color: var(--cor4);
+    margin: 15px -15px 0px -15px;
+    padding: 20px 0px;
+}
+
+.secaoAnuncio h1 {
+    padding-bottom: 5px;
+    font-size: 2.5em;
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+.secaoAnuncio p {
+    font-size: 1.2em;
+    margin: 10px 0px 20px 0px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.secaoAnuncio .video {
+    position: relative;
+    padding-bottom: 56%;
+}
+
+.secaoAnuncio .video iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* SEÇÃO VENDA DE PLANO */
+.secaoPlano {}
+
+.secaoPlano h1 {
+    margin: 10px 0px;
+    padding: 5px 0px;
+    font-size: 2.5em;
+    color: var(--cor6);
+    border-bottom: 1px solid var(--cor6);
+}
+
+.secaoPlano .listaPlanos {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 338px;
+    margin: 30px 0px;
+    position: relative;
+}
+
+#planoEspecial {
+    position: absolute;
+    top: 50%;
+    left: 33%;
+}
+
+.secaoPlano .listaPlanos .itemPlano {
+    width: 33%;
+    background-color: rgb(230, 230, 230);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.437);
+    cursor: pointer;
+}
+
+.secaoPlano .listaPlanos .itemPlano:hover {
+    background-color: rgba(147, 143, 143, 0.46);
+    transition: .5s;
+}
+
+#plano1 {
+    background-color: var(--cor6);
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--cor1);
+}
+
+#plano2 {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: var(--cor1);
+    color: var(--cor6);
+}
+#plano3 {
+    background-color: rgb(200, 200, 200);
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--cor6);
+}
+
+.pEspecial {
+    color: white;
+}
+
+.p {
+    color: var(--cor6);
+}
+
+.secaoPlano .listaPlanos .itemPlano .cabecalhoPlano {}
+
+.secaoPlano .listaPlanos .itemPlano .cabecalhoPlano h2 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 10px
+}
+
+.secaoPlano .listaPlanos .itemPlano .cabecalhoPlano p {
+    font-size: 0.9em;
+}
+
+.secaoPlano .listaPlanos .itemPlano .listaBeneficios {
+    list-style: none;
+}
+
+.secaoPlano .listaPlanos .itemPlano .listaBeneficios .itemBeneficios {
+    margin: 15px 0px;
+    font-size: 1.1em;
+    color: var(--cor6);
+}
+
+.secaoPlano .listaPlanos .itemPlano .listaBeneficios .itemBeneficios::after {
+    content: '\00A0\00A0\00A0\00A0\2714';
+}
+
+.secaoPlano .listaPlanos .itemPlano .listaBeneficios #planoEspecial {}
+
+.secaoPlano button {
+    margin: auto;
+    display: block;
+    margin-top: 275px;
+    background-color: var(--cor1);
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.233);
+}
+
+.secaoPlano button:hover {
+    background-color: var(--cor5);
+    color: var(--cor3);
+    transition: .5s;
+}
+
+/* RODAPÉ */
+.rodape {
+    background-color: var(--cor5);
+    margin-top: 40px;
+}
+
+.rodape .positionFooter {
+    display: flex;
+    justify-content: space-between;
+    gap: 130px;
+    align-items: center;
+    padding: 20px;
+}
+
+.rodape .positionFooter img {
+    width: 46px;
+    height: 32px;
+    margin-top: 13px;
+    cursor: pointer;
+}
+
+.rodape .positionFooter .listaCreditos {
+    columns: 3;
+    list-style: none;
+}
+
+.rodape .positionFooter .listaCreditos a {
+    text-decoration: none;
+    color: var(--cor1);
+    margin-bottom: 5px;
+}
+
+.rodape .positionFooter .listaCreditos a:hover {
+    text-decoration: underline;
+}
+
+.rodape .positionFooter .listaCreditos .itemCredito {
+    margin: 5px 0px;
+    color: var(--cor1);
+}
+
+.rodape .positionFooter .positionTituloRedes {}
+
+.rodape .positionFooter .positionTituloRedes h3 {
+    width: 200px;
+    color: var(--cor1);
+}
+
+.rodape .positionFooter .positionTituloRedes img {}

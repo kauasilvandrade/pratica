@@ -1,0 +1,199 @@
+@charset "UTF";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+@font-face {
+    font-family: 'Blazed';
+    src: url('fonts/Blazed.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Crazy';
+    src: url('fonts/Crazy.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Easter';
+    src: url('fonts/Easter.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Hallowenn';
+    src: url('fonts/Halloween.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Play Ful';
+    src: url('fonts/Play-ful.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Road';
+    src: url('fonts/Road.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Sketch';
+    src: url('fonts/Sketch.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Transformers';
+    src: url('fonts/Transformers.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Winter';
+    src: url('fonts/Winter.ttf') format('truetype');
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* CORPO */
+body{
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-image: linear-gradient(to top, #409465, #0EF574, #67F0A2);   
+    height: 127px;
+}
+
+#principal{
+    text-decoration: none;
+    text-shadow: 3px 3px 5px rgba(80, 80, 80, 0.788);
+    padding: 33px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font: italic bolder 2.3em 'Open Sans',sans-serif;
+}
+
+nav{
+    background-color: #089646;
+    height: 39px;
+}
+
+#lista_nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.li_nav{
+    list-style: none;
+    padding: 10px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+
+/* MAIN */
+main{
+    background-color: #67F0A2;
+    margin-top: 27px;
+    padding: 26px;
+}
+
+section{
+    background-color: white;
+    width: 1066px;
+    margin: auto;
+    border-radius: 10px;
+    height: 413px;
+}
+
+h1{
+    padding-top: 10px;
+    font-size: 28px;
+    text-align: center;
+}
+
+#ul_itens{
+    margin-right: 60px;
+}
+
+.li_itens{
+    box-shadow: 5px 5px 15px rgb(185, 184, 184);
+    background-color: rgb(230, 227, 227);
+    margin: 14px;
+    list-style: none;
+    width: 413px;
+    height: 67px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 21px;
+}
+
+#div_alinhamento-1{
+    display: flex;
+}
+#div_alinhamento-2{
+    display: flex;
+}
+#div_alinhamento-3{
+    display: flex;
+}
+
+#item1{
+    font-family: 'Blazed',sans-serif;
+}
+
+#item2{
+    font-family: 'Hallowenn',sans-serif;
+}
+#item3{
+    font-family: 'Play Ful',sans-serif;
+}
+#item4{
+    font-family: 'Sketch',sans-serif;
+}
+#item5{
+    font-family: 'Transformers',sans-serif;
+}
+#item6{
+    font-family: 'Winter',sans-serif;
+}
+#item7{
+    font-family: 'Easter',sans-serif;
+}
+#item8{
+    font-family: 'Crazy',sans-serif;
+}
+#item9{
+    font-family: 'Road',sans-serif;
+}
+
+button:hover{
+    background-color: rgb(112, 112, 112);
+}
+button{
+    height: 33px;
+    width: 84px;
+    background-color: rgb(168, 164, 164);
+    border-radius: 10px;
+    border: 0px;
+    font-size: 14px;
+}
+
+ footer{
+    background-color: #0dc55d;
+    background-color: #0dc55d;
+    height: 44px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+} 

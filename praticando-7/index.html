@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Mono&display=swap');
+
+        *{
+            margin: 0;
+            box-sizing: none;
+
+        }
+
+        body{
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        header{
+            background-color: #AE012B;
+            height: 83px;
+        }
+
+
+
+        li{
+            list-style: none;
+            display: inline-block;
+            margin-right: 14px;
+        }
+        li:hover{
+            background-color: #7F0D29;
+            border: 2px solid #7F0D29;
+        }
+
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        div{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            
+        }
+
+        img{
+            margin-top: 13px;
+        }
+        nav{
+            margin-top: 21px;
+        }
+
+        #ao-vivo{
+            background-color: #7F0D29;
+            border-radius: 26px;
+            border: 5px solid #7F0D29;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="imagens/band_logo.png" alt="Band">
+            <nav>
+                <ul>
+                    <li id="ao-vivo"><a href="#">AO VIVO</a></li>
+                    <li><a href="#">NOTÍCIAS</a></li>
+                    <li><a href="#">ESPORTES</a></li>
+                    <li><a href="#">ENTRETENIMENTO</a></li>
+                    <li><a href="#">RECEITAS</a></li>
+                    <li><a href="#">FAUSTÃO</a></li>
+                    <li><a href="#">MUNDIAL DE CLUBES</a></li>
+                    <li><a href="#">FÓRMULA 1</a></li>
+                    <li><a href="#">MASTERCHEF</a></li>
+                    <li><a href="#">PROGRAMAÇÃO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</body>
+</html>
