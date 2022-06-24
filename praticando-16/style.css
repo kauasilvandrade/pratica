@@ -1,77 +1,92 @@
 @charset "UTF-8";
 
-/*
-    background-color/body = rgb(105, 105, 105)
-
-    background-color/nav = #666666
-
-    background-color/article = #D3D3D3
-
-    background-color/aside = #2E2D2D
-*/
-
-
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(105, 105, 105);
-    margin: 0;
+:root {
+    
+    --cor1: #ffffff;
+    --cor2: #D3D3D3;
+    --cor3: #666666;
+    --cor4: #2E2D2D;
+    --cor5: #000000;
 }
 
-header{
-    background-color: white;
-    padding: 10px;
-    margin-bottom: 10px;
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor3);
+}
+
+header {
+    background-color: var(--cor1);
+    padding: 30px 10px 5px 10px;
+    min-height: 90px;
+    
 }
 
 header h1 {
     text-align: center;
+    margin-bottom: 20px;
 }
 
-nav{
-    background-color: #666666;
+header nav  {
+    background-color: var(--cor3);
     padding: 3px;
 }
 
-a{
+header nav a {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    margin-right: 15px;
+    margin-right: 10px;
 }
 
-a:hover{
-    text-decoration: underline;
-}
-
-main{
-    background-color: white;
-    padding: 10px;
+main {
+    background-color: cor1;
     max-width: 800px;
-    min-width: 300px;
-    margin: 10px auto 30px auto;
-    height: 780px;
+    min-width: 320px;
+    
+    margin: 20px auto;
+    background-color: var(--cor1);
     border-radius: 0px 0px 10px 10px;
-}
-
-
-
-article{
-    background-color: #D3D3D3;
     padding: 10px;
-    /* height: 347px; */
-    margin-bottom: 15px;
 }
 
-aside{
-    background-color: #2E2D2D;
-    color: white;
+main section  {}
+
+main section p {
+    margin: 20px 0px;
 }
 
-footer{
-    background-color: black;
-    color: white;
+
+main section article {
+    background-color: var(--cor2);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+main section h2 {}
+
+main section p {
+    text-align: justify;
+}
+
+main section aside {
+    background-color: var(--cor4);
+    color: var(--cor1);
+}
+
+main section aside p {}
+
+footer {
+    background-color: var(--cor5);
+    padding: 5px;
     text-align: center;
-    height: 50px;
-    padding: 1px;
-    background-attachment: fixed;
+    
+}
+
+footer p {
+    color: var(--cor1);
 }
