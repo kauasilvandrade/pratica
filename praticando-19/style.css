@@ -1,0 +1,64 @@
+/* PERMISSÃ0 DE ACENTUAÇÕES NO SITE  */
+@charset "UTF-8";
+
+/* CONFIGURAÇÕES GLOBAIS */
+* {}
+
+/* CORPO */
+body {}
+
+/* CONTAINER */
+.container {}
+
+/* HEADER */
+.cabecalho {}
+
+.cabecalho .imagemNavInput {}
+
+/* IMAGEM */
+.cabecalho .imagemNavInput .img-box {}
+
+.cabecalho .imagemNavInput .img-box img {}
+
+/* NAV */
+.cabecalho .imagemNavInput .menu {}
+
+.cabecalho .imagemNavInput .menu .listaDeLinks {}
+
+.cabecalho .imagemNavInput .menu .listaDeLinks .item {}
+
+.cabecalho .imagemNavInput .menu .listaDeLinks .item a {}
+
+/* SUB MENU */
+.cabecalho .imagemNavInput .menu .listaDeLinks .item .subMenu {}
+
+.cabecalho .imagemNavInput .menu .listaDeLinks .item .subMenu .listaSubMenu {}
+
+.cabecalho .imagemNavInput .menu .listaDeLinks .item .subMenu .listaSubMenu .itemSubMenu {}
+
+/* CAIXA INPUT */
+.cabecalho .imagemNavInput .input-box {}
+
+.cabecalho .imagemNavInput .input-box input {}
+
+.cabecalho .imagemNavInput .input-box svg {}
+
+/* CONTEÚDO PRINCIPAL */
+main {}
+
+main .titulo {}
+
+main .titulo h1 {}
+
+/* SEÇÃO FUNDO ANIMES */
+main .secao-bg-titulo {}
+main .secao-bg-titulo h2 {}
+main .secao-bg-titulo p {} 
+main .secao-bg-titulo p strong {} 
+
+main .secao-bg-wallpaper {}
+
+/* RODAPÉ */
+footer {}
+footer p {}
+footer p a {}
