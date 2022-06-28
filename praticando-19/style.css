@@ -1,8 +1,20 @@
 /* PERMISSÃ0 DE ACENTUAÇÕES NO SITE  */
 @charset "UTF-8";
 
+/* PALETA DE CORES */
+:root {
+    --cor0: #ffffff;
+    --cor1: #DD3333;
+    --cor2: #1A1A1A;
+    --cor3: #000000;
+}
+
 /* CONFIGURAÇÕES GLOBAIS */
-* {}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 /* CORPO */
 body {}
@@ -52,13 +64,18 @@ main .titulo h1 {}
 
 /* SEÇÃO FUNDO ANIMES */
 main .secao-bg-titulo {}
+
 main .secao-bg-titulo h2 {}
+
 main .secao-bg-titulo p {} 
+
 main .secao-bg-titulo p strong {} 
 
 main .secao-bg-wallpaper {}
 
 /* RODAPÉ */
 footer {}
+
 footer p {}
+
 footer p a {}
