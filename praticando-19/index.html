@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando Tabelas</title>
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .positon-tabela {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h1 {
+            text-align: center;
+            border-bottom: 1px solid black;
+            padding-bottom: 0.5rem;
+        }
+
+        /*--TABELA 1--*/
+        .tabela-1 {
+            background-color: gray;
+            width: 28rem;
+            border-collapse: collapse;
+        }
+
+        .tabela-1 .cabecalho th {
+            background-color: #38A4C4;
+            padding: 0.4rem;
+        }
+
+        .tabela-1 .cabecalho-2{
+            background-color: #8DCADD;
+            border-collapse: collapse;
+            border: none;
+            padding: 0.7rem;
+        }
+
+        .tabela-1 .cabecalho-2 th{
+            padding: 0.5rem;
+        }
+
+        .tabela-1 tr {
+            background-color: white;
+        }
+
+        .tabela-1 .linha-azul {
+            background-color: #D7ECF2;
+        }
+
+        .tabela-1 td {
+            font-weight: lighter;
+            text-align: center;
+            padding: 0.3rem;
+        }
+
+        /*--TABELA 2--*/
+        .tabela-2 {
+            width: 28rem;
+            border-collapse: collapse;
+        }
+
+        .tabela-2 .cabecalho {
+            background-color: #008575;
+        }
+
+        .tabela-2 .cabecalho th {
+            padding: 0.2rem;
+            color: white;
+        }
+
+        .tabela-2 .cabecalho-2  {
+            background-color: #93C3BD;
+        }
+
+        .tabela-2 tr  {
+            background-color: #C7DED9;
+            text-align: center;
+        }
+
+        .tabela-2 td {
+            padding: 0.3rem;
+        }
+
+        /*--TABELA 3--*/
+        .tabela-3 {
+            width: 28rem;
+            border-collapse: collapse;
+        }
+        
+        .tabela-3 .cabecalho th {
+            color: #E37987;
+            font-weight: lighter;
+            background-color: white;
+        }
+
+        .tabela-3 .cabecalho th {
+            color: #E37987;
+            font-weight: lighter;
+        }
+        
+        .tabela-3 .cabecalho-2 {
+            background-color: #E37987;
+        }
+
+        .tabela-3 .cabecalho-2 th { 
+            color: white;
+            font-weight: lighter;
+            padding: 0.3rem;
+            border: 1px solid black;
+        }
+        
+        .tabela-3 tr {
+            text-align: center;
+            background-color: #F5DBE2;
+        }
+
+        .tabela-3 tr td {
+            color: #E37987;
+            border: 1px solid black;
+            padding: 0.2rem;
+        }
+
+        .tabela-3 tr .coluna-background {
+            background-color: #E37987;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Praticando Tabelas</h1>
+
+    <div class="positon-tabela">
+
+        <table class="tabela-1">
+
+            <tr class="cabecalho">
+                <th colspan="3">Tabela 1</th>
+            </tr>
+
+            <tr class="cabecalho-2">
+                <th>Indivíduo</th>
+                <th>X:Massa corporal (kg)</th>
+                <th>Y:Consumo anual de água (L)</th>
+            </tr>
+            <tr class="linha-azul">
+                <td>1</td>
+                <td>90</td>
+                <td>850</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>120</td>
+                <td>400</td>
+            </tr>
+            <tr class="linha-azul">
+                <td>3</td>
+                <td>60</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>40</td>
+                <td>550</td>
+            </tr>
+            <tr class="linha-azul">
+                <td>5</td>
+                <td>82</td>
+                <td>490</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>90</td>
+                <td>350</td>
+            </tr>
+        </table>
+
+        <table class="tabela-2">
+
+            <tr class="cabecalho">
+                <th colspan="2">Produtos</th>
+            </tr>
+            <tr class="cabecalho-2">
+                <th>Código</th>
+                <th>Descrição</th>
+            </tr>
+            <tr>
+                <td>P001</td>
+                <td>Webcam</td>
+            </tr>
+            <tr>
+                <td>P002</td>
+                <td>Mouse ótico</td>
+            </tr>
+            <tr>
+                <td>P003</td>
+                <td>Pen drive 8gb</td>
+            </tr>
+
+        </table>
+
+        <table class="tabela-3">
+
+            <tr class="cabecalho">
+                <th colspan="4">Tabela Aproximadas de Medidas - Pink Ninas</th>
+            </tr>
+            <tr class="cabecalho-2">
+                <th>Tamanho</th>
+                <th>Busto</th>
+                <th>Cintura</th>
+                <th>Comprimento</th>
+            </tr>
+            <tr>
+                <td class="coluna-background">1</td>
+                <td>50 cm</td>
+                <td>48 cm</td>
+                <td>51 cm</td>
+            </tr>
+            <tr>
+                <td class="coluna-background">2</td>
+                <td>52 cm</td>
+                <td>50 cm</td>
+                <td>54 cm</td>
+            </tr>
+            <tr>
+                <td class="coluna-background">3</td>
+                <td>54 cm</td>
+                <td>52 cm</td>
+                <td>57 cm</td>
+            </tr>
+            <tr>
+                <td class="coluna-background">4</td>
+                <td>58 cm</td>
+                <td>56 cm</td>
+                <td>61 cm</td>
+            </tr>
+            <tr>
+                <td class="coluna-background">6</td>
+                <td>62 cm</td>
+                <td>58 cm</td>
+                <td>69 cm</td>
+            </tr>            
+            <tr>
+                <td class="coluna-background">8</td>
+                <td>68 cm</td>
+                <td>62 cm</td>
+                <td>71 cm</td>
+            </tr>
+            <tr>
+                <td class="coluna-background">10</td>
+                <td>70 cm</td>
+                <td>66 cm</td>
+                <td>75 cm</td>
+            </tr>
+            <tr>
+                <td class="coluna-background">12</td>
+                <td>74 cm</td>
+                <td>70 cm</td>
+                <td>80 cm</td>
+            </tr>
+            <tr>
+                <td class="coluna-background">14</td>
+                <td>78 cm</td>
+                <td>74 cm</td>
+                <td>85 cm</td>
+            </tr>
+            <tr>
+                <td class="coluna-background">16</td>
+                <td>80 cm</td>
+                <td>78 cm</td>
+                <td>89 cm</td>
+            </tr>
+
+        </table>
+
+    </div>
+</body>
+</html>
