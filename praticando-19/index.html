@@ -17,9 +17,8 @@
             padding-bottom: 5px;
         }
 
-        .container {
-            display: flex;
-            justify-content: space-around;
+        table {
+            margin-bottom: 2rem;
         }
 
         /* TABELA 1 */
@@ -32,10 +31,11 @@
             background-color: #8DCADD;
         }
 
-        .tabela001 thead .linha-th-1 {
+        .tabela001 caption {
             background-color: #38A4C4;
             font-weight: 600;
             font-size: 1.3em;
+            padding: 0.3rem;
         }
 
         .tabela001 th, td {
@@ -43,7 +43,7 @@
             text-align: center;
         }
 
-        .tabela001 .linha-azul {
+        .tabela001 tbody > tr:nth-child(odd) {
             background-color: #D7ECF2;
         }
 
@@ -51,6 +51,13 @@
         .tabela002 {
             width: 24rem;
             border-collapse: collapse;
+        }
+
+        .tabela002 caption {
+            color: #EE808E;
+            padding: 0.5rem;
+            font-weight: bold;
+            font-size: 1em;
         }
 
         .tabela002 th {
@@ -70,253 +77,414 @@
             background-color: #EE808E;
         }
 
+        /* TABELA 3 */
+        .tabela003 {
+            width: 36rem;
+            border-collapse: collapse;
+        }
+
+        .tabela003 caption {
+            color: #5D3C6B;
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 0.5rem;
+        }
+
+        .tabela003 thead {
+            background-color: #5D3C6B;
+        }
+
+        .tabela003 thead tr th {
+            text-transform: uppercase;
+            color: white;
+            padding: 0.7rem;
+            font-size: 0.9em;
+        }
+
+        .tabela003 tbody tr th {
+            color: white;
+            padding: 0.5rem;
+        }
+
+        .tabela003 tbody tr:nth-child(odd) {
+            background-color: #9D7AB4;
+        }
+
+        .tabela003 tbody tr:nth-child(even) {
+            background-color: #7d6099;
+        }
+
+        .tabela003 tbody tr td {
+            border-top: 1px solid rgba(172, 172, 172, 0.596);
+            border-bottom: 1px solid rgba(172, 172, 172, 0.596);
+            font-weight: bold;
+            color: rgb(53, 52, 52);
+            font-size: 0.9em;
+            background-color: white;
+        }
+
+        .tabela003 tbody tr .red-number {
+            color: #CD4F5F;
+        }
+
+        .tabela003 tbody tr .green-number {
+            color: #43A36C;
+        }
+
     </style>
 </head>
 <body>
     <h1>Praticando Tabelas</h1>
 
-    <div class="container">
+    <!-- TABELA 1 -->
+    <table class="tabela001">   
 
-        <!-- TABELA 1 -->
-        <table class="tabela001">
+        <!-- LEGENDA -->
+        <caption>Tabela 1</caption>
 
-            <!-- CABEÇALHO -->
-            <thead>
+        <!-- CABEÇALHO -->
+        <thead>
 
-                <!-- LINHA DA TABELA -->
-                <tr>
+            <tr>
 
-                    <th class="linha-th-1" colspan="3">Tabela 1</th>
+                <th scope="col">Indivíduo</th>
 
-                </tr>
+                <th scope="col">X:Massa corporal (kg)</th>
 
-                <tr>
+                <th scope="col">Y:Consumo anual de água (L)</th>
 
-                    <th>Indivíduo</th>
+            </tr>
 
-                    <th>X:Massa corporal (kg)</th>
+        </thead>
 
-                    <th>Y:Consumo anual de água (L)</th>
+        <!-- CORPO -->
+        <tbody>
+            
+            <!-- LINHA -->
+            <tr>
 
-                </tr>
+                <td>1</td>
 
-            </thead>
+                <td>90</td>
 
-            <!-- CORPO -->
-            <tbody>
+                <td>850</td>
+
+            </tr>
+
+            <tr>
+
+                <td>2</td>
+
+                <td>120</td>
+
+                <td>400</td>
+
+            </tr>
+
+            <tr>
+
+                <td>3</td>
+
+                <td>60</td>
+
+                <td>300</td>
+
+            </tr>
+
+            <tr>
+
+                <td>4</td>
+
+                <td>40</td>
+
+                <td>550</td>
+
+            </tr>
+
+            <tr>
+
+                <td>5</td>
+
+                <td>82</td>
+
+                <td>490</td>
+
+            </tr>
+
+            <tr>
+
+                <td>6</td>
+
+                <td>90</td>
+
+                <td>350</td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+    <!-- TABELA 2 -->
+    <table class="tabela002">
+
+        <!-- LEGENDA -->
+        <caption>Tabela Aproximada de Medidas - Pink Ninas</caption>
+
+        <!-- CABEÇALHO -->
+        <thead>
+
+            <!-- LINHA -->
+            <tr>
+
+                <th scope="col">Tamanho</th>
+
+                <th scope="col">Busto</th>
+
+                <th scope="col">Cintura</th>
+
+                <th scope="col" style="width: 30px;">Comprimento</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+
+                <th scope="row">1</th>
+
+                <td>50 cm</td>
+
+                <td>48 cm</td>
+
+                <td>51 cm</td>
+
+            </tr>
+
+            <tr>
+
+                <th scope="row">2</th>
                 
-                <!-- LINHA -->
-                <tr class="linha-azul">
+                <td>52 cm</td>
+                
+                <td>50 cm</td>
+                
+                <td>54 cm</td>
+
+            </tr>
 
-                    <td>1</td>
+            <tr>
 
-                    <td>90</td>
+                <th scope="row">3</th>
+                
+                <td>54 cm</td>
+                
+                <td>52 cm</td>
+                
+                <td>57 cm</td>
 
-                    <td>850</td>
+            </tr>
 
-                </tr>
+            <tr>
 
-                <tr>
+                <th scope="row">4</th>
+                
+                <td>58 cm</td>
+                
+                <td>56 cm</td>
+                
+                <td>61 cm</td>
 
-                    <td>2</td>
+            </tr>
 
-                    <td>120</td>
+            <tr>
 
-                    <td>400</td>
+                <th scope="row">6</th>
+                
+                <td>62 cm</td>
+                
+                <td>58 cm</td>
+                
+                <td>69 cm</td>
 
-                </tr>
+            </tr>
 
-                <tr class="linha-azul">
+            <tr>
 
-                    <td>3</td>
+                <th scope="row">8</th>
+                
+                <td>68 cm</td>
+                
+                <td>62 cm</td>
+                
+                <td>71 cm</td>
 
-                    <td>60</td>
+            </tr>
 
-                    <td>300</td>
+            <tr>
 
-                </tr>
+                <th scope="row">10</th>
+                
+                <td>70 cm</td>
+                
+                <td>66 cm</td>
+                
+                <td>75 cm</td>
 
-                <tr>
+            </tr>
 
-                    <td>4</td>
+            <tr>
 
-                    <td>40</td>
+                <th scope="row">12</th>
+                
+                <td>74 cm</td>
+                
+                <td>70 cm</td>
+                
+                <td>80 cm</td>
 
-                    <td>550</td>
+            </tr>
 
-                </tr>
+            <tr>
 
-                <tr class="linha-azul">
+                <th scope="row">14</th>
+                
+                <td>78 cm</td>
+                
+                <td>74 cm</td>
+                
+                <td>85 cm</td>
 
-                    <td>5</td>
+            </tr>
 
-                    <td>82</td>
+            <tr>
 
-                    <td>490</td>
+                <th scope="row">16</th>
+                
+                <td>80 cm</td>
+                
+                <td>78 cm</td>
+                
+                <td>89 cm</td>
 
-                </tr>
+            </tr>
 
-                <tr>
+        </tbody>
 
-                    <td>6</td>
+    </table>
 
-                    <td>90</td>
+    <!-- TABELA 3 -->
+    <table class="tabela003">
 
-                    <td>350</td>
+        <!-- LEGENDA -->
+        <caption>Cálculo e evolução das parcelas SAC e Price</caption>
 
-                </tr>
+        <!-- CABEÇALHO -->
+        <thead>
+            
+            <!-- LINHA -->
+            <tr>
 
-            </tbody>
+                <th></th>
 
-        </table>
+                <th scope="col" style="width: 11rem;">Tabela Sac</th>
 
-        <!-- TABELA 2 -->
-        <table class="tabela002">
+                <th scope="col" style="width: 11rem;">Tabela Price</th>
 
-            <!-- CABEÇALHO -->
-            <thead>
+            </tr>
 
-                <!-- LINHA -->
-                <tr>
+        </thead>
 
-                    <th>Tamanho</th>
+        <!-- CORPO -->
+        <tbody>
 
-                    <th>Busto</th>
+            <!-- LINHA -->
+            <tr>
 
-                    <th>Cintura</th>
+                <th scope="row">Valor financiado</th>
 
-                    <th>Comprimento</th>
+                <td>R$ 200 mil</td>
 
-                </tr>
+                <td>R$ 200 mil</td>
 
-            </thead>
+            </tr>
 
-            <tbody>
+            <tr>
 
-                <tr>
+                <th scope="row">Prazo total</th>
 
-                    <th>1</th>
+                <td style="background-color: #F4F3F7;">240 meses</td>
 
-                    <td>50 cm</td>
+                <td style="background-color: #F4F3F7;">240 meses</td>
 
-                    <td>48 cm</td>
+            </tr>
 
-                    <td>51 cm</td>
+            <tr>
 
-                </tr>
+                <th scope="row">Juros</th>
 
-                <tr>
-
-                    <th>2</th>
-                    
-                    <td>52 cm</td>
-                    
-                    <td>50 cm</td>
-                    
-                    <td>54 cm</td>
-
-                </tr>
+                <td>0,85%</td>
 
-                <tr>
+                <td>0,85%</td>
 
-                    <th>3</th>
-                    
-                    <td>54 cm</td>
-                    
-                    <td>52 cm</td>
-                    
-                    <td>57 cm</td>
+            </tr>
 
-                </tr>
+            <tr>
 
-                <tr>
+                <th scope="row">Primeiras parcelas</th>
 
-                    <th>4</th>
-                    
-                    <td>58 cm</td>
-                    
-                    <td>56 cm</td>
-                    
-                    <td>61 cm</td>
+                <td style="background-color: #F4F3F7;">R$ 2.533,33</td>
 
-                </tr>
+                <td style="background-color: #F4F3F7;">R$ 1.956,61</td>
 
-                <tr>
+            </tr>
 
-                    <th>6</th>
-                    
-                    <td>62 cm</td>
-                    
-                    <td>58 cm</td>
-                    
-                    <td>69 cm</td>
+            <tr>
 
-                </tr>
+                <th scope="row">Ultimas parcelas</th>
 
-                <tr>
+                <td>R$ 840,41</td>
 
-                    <th>8</th>
-                    
-                    <td>68 cm</td>
-                    
-                    <td>62 cm</td>
-                    
-                    <td>71 cm</td>
+                <td class="red-number">R$ 1.956,61</td>
 
-                </tr>
+            </tr>
 
-                <tr>
+            <tr>
 
-                    <th>10</th>
-                    
-                    <td>70 cm</td>
-                    
-                    <td>66 cm</td>
-                    
-                    <td>75 cm</td>
+                <th scope="row">Juros totais</th>
 
-                </tr>
+                <td style="background-color: #F4F3F7;">R$ 205.849,99</td>
 
-                <tr>
+                <td style="background-color: #F4F3F7;">R$ 269.588,69</td>
 
-                    <th>12</th>
-                    
-                    <td>74 cm</td>
-                    
-                    <td>70 cm</td>
-                    
-                    <td>80 cm</td>
+            </tr>
 
-                </tr>
+            <tr>
 
-                <tr>
+                <th scope="row">Valor total a pagar</th>
 
-                    <th>14</th>
-                    
-                    <td>78 cm</td>
-                    
-                    <td>74 cm</td>
-                    
-                    <td>85 cm</td>
+                <td>R$ 404.849,99</td>
 
-                </tr>
+                <td class="red-number">R$ 469.588,69</td>
 
-                <tr>
+            </tr>
 
-                    <th>16</th>
-                    
-                    <td>80 cm</td>
-                    
-                    <td>78 cm</td>
-                    
-                    <td>89 cm</td>
+            <tr>
 
-                </tr>
+                <th scope="row">Economia</th>
 
-            </tbody>
+                <td class="green-number" style="background-color: #F4F3F7;">R$ 64.738,70</td>
 
-        </table>
+                <td class="red-number" style="background-color: #F4F3F7;">-</td>
 
-    </div>
+            </tr>
+
+        </tbody>
+
+
+    </table>
+
 </body>
 </html>
