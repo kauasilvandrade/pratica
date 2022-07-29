@@ -13,6 +13,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
+    background-attachment: fixed;
     font-family: 'Roboto', sans-serif;
 }
 
