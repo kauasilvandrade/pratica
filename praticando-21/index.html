@@ -11,12 +11,10 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
-        h1 {
-            text-align: center;
-        }
-
+        /* TABELA 1 */
         .tabela-1 {
             border-collapse: collapse;
+            margin-bottom: 2rem;
         }
 
         .tabela-1 caption {
@@ -34,6 +32,50 @@
             padding: 7px;
             text-align: center;
         }
+
+        /* TABELA 2 */
+        .tabela-2 {
+            width: 700px;
+            border-collapse: collapse;
+        }
+
+        .tabela-2 caption {
+            color: #195333;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        .tabela-2 thead {
+            background-color: #195333;
+        }
+
+        .tabela-2 thead tr {
+            color: white;
+        }
+
+        .tabela-2 thead tr th {
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        .coluna-1 {
+            background-color: #227447;
+        }
+
+        .tabela-2 tbody tr:nth-child(even) {
+            background-color: #45836150;
+        }
+        
+        .tabela-2 tbody tr th {
+            color: white;
+            border: 1px solid black;
+        }
+
+        .tabela-2 tfoot tr th {
+            border: 1px solid black;
+            color: white;
+        }
+
 
     </style>
 </head>
@@ -136,6 +178,124 @@
             </tbody>
 
         </table>
+
     </div>
+
+    <div class="container">
+
+        <table class="tabela-2">
+
+            <colgroup>
+
+                <col class="coluna-1">
+
+            </colgroup>
+
+            <caption>Produtos</caption>
+
+            <thead>
+
+                <th scope="col">Produto</th>
+
+                <th scope="col">Trim 1</th>
+
+                <th scope="col">Trim 2</th>
+
+                <th scope="col">Total Geral</th>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <th scope="row">Chocolate</th>
+
+                    <td>R$ 744,60</td>
+
+                    <td>R$ 162,56</td>
+
+                    <td>R$ 907,16</td>
+
+                </tr>
+
+                <tr>
+
+                    <th scope="row">Bala de goma</th>
+                    
+                    <td>R$ 5.079,60</td>
+                    
+                    <td>R$ 1.249,20</td>
+                    
+                    <td>R$ 6.328,80</td>
+
+                </tr>
+
+                <tr>
+
+                    <th scope="row">Pão escocês</th>
+                    
+                    <td>R$ 1.267,50</td>
+                    
+                    <td>R$ 1.062,50</td>
+                    
+                    <td>R$ 2.330,00</td>
+
+                </tr>
+
+                <tr>
+
+                    <th scope="row">Scones do Sr. Diogo</th>
+                    
+                    <td>R$ 1.418,00</td>
+                    
+                    <td>R$ 756,00</td>
+                    
+                    <td>R$ 2.174,00</td>
+
+                </tr>
+
+                <tr>
+
+                    <th scope="row">Torta de açucar</th>
+                    
+                    <td>R$ 4.728,60</td>
+                    
+                    <td>R$ 4.547,92</td>
+                    
+                    <td>R$ 9.275,92</td>
+
+                </tr>
+
+                <tr>
+
+                    <th scope="row">Biscotos de chocolate</th>
+                    
+                    <td>R$ 943,89</td>
+                    
+                    <td>R$ 349,60</td>
+                    
+                    <td>R$ 1.293,49</td>
+
+                </tr>
+
+            </tbody>
+
+            <tfoot>
+
+                <th scope="row">Total</th>
+
+                <td>R$ 14.181,59</td>
+
+                <td>R$ 8.127,78</td>
+
+                <td>R$ 22.309,37</td>
+
+            </tfoot>
+
+        </table>
+
+    </div>
+
 </body>
 </html>
