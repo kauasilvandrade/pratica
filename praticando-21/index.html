@@ -11,6 +11,10 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        .container {
+            overflow-x: auto;
+        }
+
         /* TABELA 1 */
         .tabela-1 {
             border-collapse: collapse;
@@ -37,6 +41,7 @@
         .tabela-2 {
             width: 700px;
             border-collapse: collapse;
+            margin-bottom: 2rem;
         }
 
         .tabela-2 caption {
@@ -76,6 +81,88 @@
             color: white;
         }
 
+        /* TABELA 3 */
+        .tabela-3 {
+            border-collapse: collapse;
+            margin-bottom: 2rem;
+            width: 860px;
+        }
+
+        .tabela-3 caption {
+            color: #4472C5;
+            font-weight: bold;
+            padding: 5px;
+        }
+
+        .tabela-3 thead {
+            background-color: #4472C5;
+        }
+
+        .tabela-3 thead tr th {
+            color: white;
+            padding: 7px;
+            border: 1px solid #8EA9DB;
+            text-align: left;
+        }
+
+        .tabela-3 tbody tr:nth-child(odd) {
+            background-color: #D9E1F2;
+        }
+
+        .tabela-3 tbody tr td {
+            border: 1px solid #8EA9DB;
+            text-align: left;
+        }
+
+        .tabela-3 tbody tr .num {
+            text-align: center;
+        }
+
+        .tabela-3 tbody tr .preco {
+            text-align: right;
+        }
+
+        /* TABELA 4 */
+        .tabela-4 {
+            border-collapse: collapse;
+            width: 650px;
+        }
+
+        .tabela-4 caption {
+            background-color: #4F81BD;
+            text-transform: uppercase;
+            color: white;
+            font-weight: bold;
+            padding: 7px;
+            width: 523px;
+            margin-left: 134px;
+        }
+
+        .tabela-4 thead {
+            box-shadow: 0px 2px 0px #4f81bd;
+        }
+
+        .tabela-4 thead tr th {
+            border: 1px solid #4F81BD;
+            padding: 5px;
+        }
+
+        .tabela-4 tbody tr:nth-child(odd){
+            background-color: #DBE5F1;
+        }
+
+        .tabela-4 tbody tr th, td {
+            border: 1px solid #4F81BD;
+            padding: 5px;
+        }
+
+        .tabela-4 tbody tr th{
+            text-align: left;
+        }
+
+        .tabela-4 tbody tr .num {
+            text-align: center;
+        }
 
     </style>
 </head>
@@ -183,6 +270,7 @@
 
     <div class="container">
 
+        <!-- TABELA 2 -->
         <table class="tabela-2">
 
             <colgroup>
@@ -292,6 +380,534 @@
                 <td>R$ 22.309,37</td>
 
             </tfoot>
+
+        </table>
+
+    </div>
+
+    <div class="container">
+
+        <!-- TABELA 3 -->
+        <table class="tabela-3">
+
+            <caption>Vendas</caption>
+
+            <thead>
+
+                <th scope="col">Seq.</th>
+
+                <th scope="col">Data</th>
+
+                <th scope="col">Cód. Cliente</th>
+
+                <th scope="col">Cidade</th>
+
+                <th scope="col">Cod. Produto</th>
+
+                <th scope="col" style="width: 60px;">Qtde</th>
+
+                <th scope="col">Preço Unitário</th>
+
+                <th scope="col">Valor Bruto</th>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td class="num">1</td>
+                    
+                    <td>01/01/2020</td>
+
+                    <td class="num">71</td>
+
+                    <td>Paranavaí</td>
+
+                    <td class="num">1</td>
+
+                    <td class="preco">37,00</td>
+
+                    <td class="preco">R$ 101,00</td>
+
+                    <td class="preco">R$ 3.737,00</td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="num">2</td>
+                    
+                    <td>01/01/2020</td>
+                    
+                    <td class="num">52</td>
+                    
+                    <td>São Luis</td>
+                    
+                    <td class="num">7</td>
+                    
+                    <td class="preco">47,00</td>
+                    
+                    <td class="preco">R$ 93,00</td>
+                    
+                    <td class="preco">R$ 4.371,00</td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="num">3</td>
+                    
+                    <td>01/01/2020</td>
+                    
+                    <td class="num">92</td>
+                    
+                    <td>Recífe</td>
+                    
+                    <td class="num">12</td>
+                    
+                    <td class="preco">34,00</td>
+                    
+                    <td class="preco">R$ 116,00</td>
+                    
+                    <td class="preco">R$ 3.944,00</td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="num">4</td>
+                    
+                    <td>04/01/2020</td>
+                    
+                    <td class="num">16</td>
+                    
+                    <td>Eunápolis</td>
+                    
+                    <td class="num">14</td>
+                    
+                    <td class="preco">44,00</td>
+                    
+                    <td class="preco">R$ 113,00</td>
+                    
+                    <td class="preco">R$ 4.972,00</td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="num">5</td>
+                    
+                    <td>05/01/2020</td>
+                    
+                    <td class="num">66</td>
+                    
+                    <td>Gurupi</td>
+                    
+                    <td class="num">15</td>
+                    
+                    <td class="preco">24,00</td>
+                    
+                    <td class="preco">R$ 97,00</td>
+                    
+                    <td class="preco">R$ 2.328,00</td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="num">6</td>
+                    
+                    <td>06/01/2020</td>
+                    
+                    <td class="num">93</td>
+                    
+                    <td>Salvador</td>
+                    
+                    <td class="num">12</td>
+                    
+                    <td class="preco">11,00</td>
+                    
+                    <td class="preco">R$ 96,00</td>
+                    
+                    <td class="preco">R$ 1.056,00</td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="num">7</td>
+                    
+                    <td>06/01/2020</td>
+                    
+                    <td class="num">2</td>
+                    
+                    <td>Laranjeiras do Sul</td>
+                    
+                    <td class="num">10</td>
+                    
+                    <td class="preco">20,00</td>
+                    
+                    <td class="preco">R$ 112,00</td>
+                    
+                    <td class="preco">R$ 2.240,00</td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="num">8</td>
+                    
+                    <td>06/01/2020</td>
+                    
+                    <td class="num">9</td>
+                    
+                    <td>Governador Valadares</td>
+                    
+                    <td class="num">15</td>
+                    
+                    <td class="preco">10,00</td>
+                    
+                    <td class="preco">R$ 92,00</td>
+                    
+                    <td class="preco">R$ 920,00</td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="num">10</td>
+                    
+                    <td>07/01/2020</td>
+                    
+                    <td class="num">20</td>
+                    
+                    <td>São Bernardo do Campo</td>
+                    
+                    <td class="num">10</td>
+                    
+                    <td class="preco">45,00</td>
+                    
+                    <td class="preco">R$ 107,00</td>
+                    
+                    <td class="preco">R$ 4.815,00</td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="num">11</td>
+                    
+                    <td>07/01/2020</td>
+                    
+                    <td class="num">87</td>
+                    
+                    <td>Fortaleza</td>
+                    
+                    <td class="num">5</td>
+                    
+                    <td class="preco">14,00</td>
+                    
+                    <td class="preco">R$ 105,00</td>
+                    
+                    <td class="preco">R$ 1.470,00</td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="num">12</td>
+                    
+                    <td>07/01/2020</td>
+                    
+                    <td class="num">96</td>
+                    
+                    <td>Santana de Parnaíbas</td>
+                    
+                    <td class="num">10</td>
+                    
+                    <td class="preco">27,00</td>
+                    
+                    <td class="preco">R$ 105,00</td>
+                    
+                    <td class="preco">R$ 2.835,00</td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="num">13</td>
+                    
+                    <td>09/01/2020</td>
+                    
+                    <td class="num">55</td>
+                    
+                    <td>Manaus</td>
+                    
+                    <td class="num">15</td>
+                    
+                    <td class="preco">18,00</td>
+                    
+                    <td class="preco">R$ 110,00</td>
+                    
+                    <td class="preco">R$ 1.980,00</td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <div class="container">
+
+        <!-- TABELA 4 -->
+        <table class="tabela-4">
+
+            <caption>Ano</caption>
+
+            <thead>
+
+                <tr>
+
+                    <th scope="col" >Mês</th>
+
+                    <th scope="col" class="num">2005</th>
+
+                    <th scope="col" class="num">2006</th>
+
+                    <th scope="col" class="num">2007</th>
+
+                    <th scope="col" class="num">2008</th>
+
+                    <th scope="col" class="num">2009</th>
+
+                    <th scope="col" class="num">2010</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <th scope="row">Janeiro</th>
+
+                    <td class="num">287,00</td>
+
+                    <td class="num">300,00</td>
+
+                    <td class="num">259,00</td>
+
+                    <td class="num">250,00</td>
+
+                    <td class="num">285,00</td>
+
+                    <td class="num">299,00</td>
+
+                </tr>
+
+                <tr>
+
+                    <th scope="row">Fevereiro</th>
+
+                    <td class="num">275,00</td>
+                    
+                    <td class="num">283,00</td>
+                    
+                    <td class="num">284,00</td>
+                    
+                    <td class="num">276,00</td>
+                    
+                    <td class="num">290,00</td>
+                    
+                    <td class="num">272,00</td>
+
+                </tr>
+
+                <tr>
+
+                    <th scope="row">Março</th>
+
+                    <td class="num">277,00</td>
+                    
+                    <td class="num">281,00</td>
+                    
+                    <td class="num">296,00</td>
+                    
+                    <td class="num">277,00</td>
+                    
+                    <td class="num">292,00</td>
+                    
+                    <td class="num">292,00</td>
+
+                </tr>
+
+                <tr>
+
+                    <th scope="row">Abril</th>
+
+                    <td class="num">253,00</td>
+                    
+                    <td class="num">271,00</td>
+                    
+                    <td class="num">279,00</td>
+                    
+                    <td class="num">280,00</td>
+                    
+                    <td class="num">276,00</td>
+                    
+                    <td class="num">277,00</td>
+
+                </tr>
+
+                <tr>
+
+                    <th scope="row">Maio</th>
+
+                    <td class="num">261,00</td>
+                    
+                    <td class="num">256,00</td>
+                    
+                    <td class="num">276,00</td>
+                    
+                    <td class="num">300,00</td>
+                    
+                    <td class="num">261,00</td>
+                    
+                    <td class="num">259,00</td>
+
+                </tr>
+
+                <tr>
+
+                    <th scope="row">Junho</th>
+
+                    <td class="num">293,00</td>
+                    
+                    <td class="num">269,00</td>
+                    
+                    <td class="num">250,00</td>
+                    
+                    <td class="num">266,00</td>
+                    
+                    <td class="num">260,00</td>
+                    
+                    <td class="num">261,00</td>
+
+                </tr>
+
+                <tr>
+
+                    <th scope="row">Julho</th>
+
+                    <td class="num">282,00</td>
+                    
+                    <td class="num">292,00</td>
+                    
+                    <td class="num">278,00</td>
+                    
+                    <td class="num">281,00</td>
+                    
+                    <td class="num">256,00</td>
+                    
+                    <td class="num">280,00</td>
+
+                </tr>
+
+                <tr>
+
+                    <th scope="row">Agosto</th>
+
+                    <td class="num">279,00</td>
+                    
+                    <td class="num">266,00</td>
+                    
+                    <td class="num">269,00</td>
+                    
+                    <td class="num">284,00</td>
+                    
+                    <td class="num">294,00</td>
+                    
+                    <td class="num">276,00</td>
+
+                </tr>
+
+                <tr>
+
+                    <th scope="row">Setembro</th>
+
+                    <td class="num">258,00</td>
+                    
+                    <td class="num">379,00</td>
+                    
+                    <td class="num">283,00</td>
+                    
+                    <td class="num">289,00</td>
+                    
+                    <td class="num">280,00</td>
+                    
+                    <td class="num">256,00</td>
+
+                </tr>
+
+                <tr>
+
+                    <th scope="row">Outubro</th>
+
+                    <td class="num">273,00</td>
+                    
+                    <td class="num">265,00</td>
+                    
+                    <td class="num">279,00</td>
+                    
+                    <td class="num">299,00</td>
+                    
+                    <td class="num">252,00</td>
+                    
+                    <td class="num">262,00</td>
+
+                </tr>
+
+                <tr>
+
+                    <th scope="row">Novembro</th>
+
+                    <td class="num">281,00</td>
+                    
+                    <td class="num">274,00</td>
+                    
+                    <td class="num">278,00</td>
+                    
+                    <td class="num">293,00</td>
+                    
+                    <td class="num">251,00</td>
+                    
+                    <td class="num">250,00</td>
+
+                </tr>
+
+                <tr>
+
+                    <th scope="row">Dezembro</th>
+
+                    <td class="num">270,00</td>
+                    
+                    <td class="num">287,00</td>
+                    
+                    <td class="num">264,00</td>
+                    
+                    <td class="num">283,00</td>
+                    
+                    <td class="num">287,00</td>
+                    
+                    <td class="num">297,00</td>
+
+                </tr>
+
+            </tbody>
 
         </table>
 
