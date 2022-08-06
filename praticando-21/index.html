@@ -11,14 +11,66 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
-        .container {
+        .container-1 {
             overflow-x: auto;
+            margin-bottom: 2rem;
+        }
+
+        .container-1::-webkit-scrollbar {
+            background-color:  #F4B084;
+        }
+
+        .container-1::-webkit-scrollbar-thumb {
+            background-color: #8f674b;
+            border-radius: 5px;
+        }
+
+        .container-2 {
+            overflow-x: auto;
+            margin-bottom: 2rem;
+        }
+
+        .container-2::-webkit-scrollbar {
+            background-color: #227447;
+        }
+
+        .container-2::-webkit-scrollbar-thumb {
+            background-color: #195333;
+            border-radius: 5px;
+        }
+
+        .container-3 {
+            overflow-x: auto;
+            margin-bottom: 2rem;
+        }
+
+        .container-3::-webkit-scrollbar {
+            background-color: #4F81BD;
+        }
+
+        .container-3::-webkit-scrollbar-thumb {
+            background-color: #385ca0;
+            border-radius: 5px;
+        }
+
+        .container-4 {
+            overflow-x: auto;
+            margin-bottom: 2rem;
+        }
+
+        .container-4::-webkit-scrollbar {
+            background-color: #446da0;
+        }
+
+        .container-4::-webkit-scrollbar-thumb {
+            background-color: #8EA9DB;
+            border-radius: 5px;
         }
 
         /* TABELA 1 */
         .tabela-1 {
             border-collapse: collapse;
-            margin-bottom: 2rem;
+            width: 712px;
         }
 
         .tabela-1 caption {
@@ -31,7 +83,13 @@
             background-color: #F4B084;
         }
 
-        .tabela-1 th, td {
+        .tabela-1 tr th {
+            border: 1px solid black;
+            padding: 7px;
+            text-align: center;
+        }
+
+        .tabela-1 tr td {
             border: 1px solid black;
             padding: 7px;
             text-align: center;
@@ -41,7 +99,6 @@
         .tabela-2 {
             width: 700px;
             border-collapse: collapse;
-            margin-bottom: 2rem;
         }
 
         .tabela-2 caption {
@@ -70,21 +127,35 @@
         .tabela-2 tbody tr:nth-child(even) {
             background-color: #45836150;
         }
-        
+
         .tabela-2 tbody tr th {
             color: white;
             border: 1px solid black;
+            padding: 5px;
+        }
+        
+        .tabela-2 tbody tr td {
+            color: black;
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
         }
 
         .tabela-2 tfoot tr th {
             border: 1px solid black;
+            padding: 5px;
             color: white;
+            text-align: center;
+        }
+
+        .tabela-2 tfoot tr td {
+            text-align: center;
+            border: 1px solid black;
         }
 
         /* TABELA 3 */
         .tabela-3 {
             border-collapse: collapse;
-            margin-bottom: 2rem;
             width: 860px;
         }
 
@@ -112,6 +183,7 @@
         .tabela-3 tbody tr td {
             border: 1px solid #8EA9DB;
             text-align: left;
+            padding: 5px;
         }
 
         .tabela-3 tbody tr .num {
@@ -151,7 +223,12 @@
             background-color: #DBE5F1;
         }
 
-        .tabela-4 tbody tr th, td {
+        .tabela-4 tbody tr th {
+            border: 1px solid #4F81BD;
+            padding: 5px;
+        }
+
+        .tabela-4 tbody tr td {
             border: 1px solid #4F81BD;
             padding: 5px;
         }
@@ -169,7 +246,7 @@
 <body>
     <h1>Praticando Tabelas</h1>
 
-    <div class="container">
+    <div class="container-1">
 
         <!-- TABELA 1 -->
         <table class="tabela-1">
@@ -268,7 +345,7 @@
 
     </div>
 
-    <div class="container">
+    <div class="container-2">
 
         <!-- TABELA 2 -->
         <table class="tabela-2">
@@ -385,7 +462,7 @@
 
     </div>
 
-    <div class="container">
+    <div class="container-3">
 
         <!-- TABELA 3 -->
         <table class="tabela-3">
@@ -660,7 +737,7 @@
 
     </div>
 
-    <div class="container">
+    <div class="container-4">
 
         <!-- TABELA 4 -->
         <table class="tabela-4">
