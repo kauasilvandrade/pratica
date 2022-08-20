@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgray;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        h1 {
+            border-bottom: 2px solid black;
+            padding-bottom: 0.4rem;
+            margin: 2rem auto 2rem auto;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        section h2 {
+            margin-bottom: 1rem;
+            border-bottom: 2px solid black;
+            padding-bottom: 0.4rem;
+        }
+
+        #secao-gmaps {
+            padding: 2rem;
+            background-color: #424E4F;
+        }
+
+        #secao-gmaps h2 {
+            color: white;
+            border-bottom: 2px solid white;
+        }
+
+        #secao-docs {
+            padding: 2rem;
+            background-color: #5E6D70;
+        }
+
+        #secao-docs h2 {
+            color: white;
+            border-bottom: 2px solid white;
+        }
+
+        #secao-waze {
+            padding: 2rem;
+            background-color: lightblue;
+        }
+
+        #secao-video {
+            padding: 2rem;
+            background-color: rgb(235, 177, 70);
+        }
+
+        section iframe {
+            width: 100%;
+            display: block;
+            border: none;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Coisas legais com iframes</h1>
+
+    <section id="secao-gmaps">
+
+        <div class="container">
+
+            <h2>Google Maps</h2>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.2329913009926!2d-46.71606638502365!3d-23.488115984719283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef908cdaeeb0b%3A0x573aff9548bba13!2sArt&#39;s%20Metal%20Serralheria!5e0!3m2!1spt-BR!2sbr!4v1661031712268!5m2!1spt-BR!2sbr" width="560" height="315" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+
+    </section>
+
+    <section id="secao-docs">
+
+        <div class="container">
+
+            <h2>Google Docs</h2>
+
+            <iframe src="https://docs.google.com/document/d/e/2PACX-1vTny_UZjDvCd2f-U899m7L0swpjMRkUxrKa_wMgdI8MaNHJcsAlurEhwJYPwfIuZm5sDI1CGgHySWlE/pub?embedded=true" width="560" height="315"></iframe>
+
+        </div>
+
+    </section>
+
+    <section id="secao-waze">
+
+        <div class="container">
+
+            <h2>Waze</h2>
+
+            <iframe src="https://embed.waze.com/iframe?zoom=16&lat=-23.488116&lon=-46.713878&ct=livemap" width="560" height="315" allowfullscreen></iframe>
+
+        </div>
+
+    </section>
+
+    <section id="secao-video">
+
+        <div class="container">
+
+            <h2>Videos do Youtube</h2>
+
+            <div class="video-box"></div><iframe width="560" height="315" src="https://www.youtube.com/embed/dzhJsc1YszU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+        </div>
+
+    </section> 
+
+</body>
+</html>
