@@ -102,7 +102,7 @@ form .button-box input::placeholder {
 
 @media screen and (max-width: 442px) {
     form {
-        padding: 0 2rem;
+        padding: 0 1rem;
     }
 
     form .grupo-inputs {
