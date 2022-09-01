@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="cadastro.php" autocomplete="on" method="POST">
+
+        <h2>Contate-nos</h2>
+
+        <div class="grupo-inputs">
+
+            <!-- NOME -->
+            <div class="input-box">
+
+                <input type="text" name="name" id="name" autocomplete="username" placeholder="Nome" minlength="5" maxlength="20" required>
+
+            </div>
+
+            <!-- SOBRENOME -->
+            <div class="input-box">
+
+                <input type="text" name="lastname" id="lastname" autocomplete="username" minlength="5" maxlength="20" placeholder="Sobrenome" required>
+
+            </div>
+
+            <!-- EMAIL -->
+            <div class="input-box">
+
+                <input type="email" name="email" id="email" autocomplete="email" placeholder="Email" required>
+
+            </div>
+
+            <!-- TELEFONE -->
+            <div class="input-box">
+
+                <input type="tel" name="tel" id="tel" autocomplete="tel" maxlength="11" placeholder="Telefone" required>
+
+            </div>
+
+        </div>
+
+        <!-- ENDEREÇO -->
+        <div class="input-box">
+
+            <input type="text" name="address" id="address" autocomplete="address-level1" placeholder="Endereço" required>
+
+        </div>
+
+        <!-- MENSAGEM -->
+        <div class="text-box">
+
+            <textarea name="text-are" id="text-are" cols="30" rows="10" placeholder="Digite sua mensagem aqui"></textarea>
+
+        </div>
+
+        <div class="button-box">
+
+            <input type="submit" value="Enviar">
+
+        </div>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,111 @@
+@charset "UTF-8";   
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 94vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 414px;
+}
+
+form h2 {
+    color: #4150F5;
+    font-weight: 100;
+    font-size: 2em;
+    margin-bottom: 0.5rem;
+}
+
+form .grupo-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+}
+
+form .grupo-inputs .input-box input {
+    background-color: #E8EAFE;
+    outline: none;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 1rem;
+}
+
+form .input-box input {
+    width: 100%;
+    background-color: #C6CAFC;
+    outline: none;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 1rem;
+}
+
+form .input-box input::placeholder {
+    color: #4150F5;
+    font-weight: bold;
+}
+
+form .text-box {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+form .text-box textarea {
+    border-radius: 0.3rem;
+    border: none;
+    background-color: #A3ABFA;
+    width: 100%;
+    height: 72px;
+    outline: none;
+    padding: 1rem;
+}
+
+form .text-box textarea::placeholder {
+    font-weight: bold;
+    color: #4150F5;
+}
+
+form .button-box{
+    margin: auto;
+    width: 8rem;
+}
+
+form .button-box input {
+    background-color: #1A2DF3;
+    border: none;
+    outline: none;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    color: white;
+    width: 8rem;
+    height: 38px;
+}
+
+form .button-box input:hover {
+    background-color: #0014ec;
+    transition: .5s;
+}
+
+form .button-box input::placeholder {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 442px) {
+    form {
+        padding: 0 2rem;
+    }
+
+    form .grupo-inputs {
+        flex-direction: column;
+    }
+}
