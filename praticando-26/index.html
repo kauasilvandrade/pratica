@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="conteudo">
+
+        <h1>Feedback do cliente</h1>
+
+        <p>Adoraríamos saber mais sobre sua experiência como cliente. Sinta-se á vontade para compartilhar susgestões, ideias e o que mais achar relevante.</p>
+
+        <form action="experiencia.php" method="get" autocomplete="on">
+
+            <!-- INFORMAÇÕES PESSOAIS -->
+            <fieldset class="informacoes-pessoais">
+
+                <!-- NOME -->
+                <div class="campo-input">
+
+                    <label for="nome"><strong>Nome</strong></label>
+
+                    <input type="text" name="nome" id="nome" required maxlength="20" autocomplete="name" placeholder="Insira seu nome">
+
+                </div>
+
+                <!-- SOBRENOME -->
+                <div class="campo-input">
+
+                    <label for="sobrenome"><strong>Sobrenome</strong></label>
+
+                    <input type="text" name="sobrenome" id="sobrenome" required maxlength="20" autocomplete="name" placeholder="Insira seu sobrenome">
+
+                </div>
+
+                <!-- EMAIL -->
+                <div class="campo-input">
+
+                    <label for="email"><strong>Email</strong></label>
+
+                    <input type="email" name="email" id="email" autocomplete="email" required placeholder="Insira seu email">
+
+                </div>
+             
+            </fieldset>
+            
+            <!-- EXPERIÊNCIA -->
+            <fieldset class="campo-experiencia">
+
+                <label><strong>Como você avaliaria nossos serviços?</strong></label>
+
+                <!-- EXCELENTE -->
+                <label for="excelente" class="campo-input">
+
+                    <input type="radio" name="experiencia" id="excelente" checked>
+
+                    <label for="excelente">Excelente</label>
+
+                </label>
+
+                <!-- MUITO BOM -->
+                <label for="muitobom" class="campo-input">
+
+                    <input type="radio" name="experiencia" id="muitobom">
+
+                    <label for="muitobom">Muito Bom</label>
+
+                </label>
+
+                <!-- BOM -->
+                <label for="bom" class="campo-input">
+
+                    <input type="radio" name="experiencia" id="bom">
+
+                    <label for="bom">Bom</label>
+
+                </label>
+
+                <!-- JUSTO -->
+                <label for="justo" class="campo-input">
+
+                    <input type="radio" name="experiencia" id="justo">
+
+                    <label for="justo">Justo</label>
+
+                </label>
+
+                <!-- RUIM -->
+                <label for="ruim" class="campo-input">
+
+                    <input type="radio" name="experiencia" id="ruim">
+
+                    <label for="ruim">Ruim</label>
+
+                </label>
+
+                <!-- SUA EXPERIÊNCIA -->
+                <label for="suaexperiencia"><strong>Descreva sua experiência</strong></label>
+
+                <textarea name="suaexperiencia" id="suaexperiencia" cols="30" rows="10" placeholder="Insira seu texto" required></textarea>
+
+            </fieldset>
+
+            <input type="submit" value="Enviar" id="botao" name="botao">
+
+        </form>
+
+    </main>
+
+</body>
+</html>

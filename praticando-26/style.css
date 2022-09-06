@@ -1,0 +1,156 @@
+@charset "UTF-8";
+
+/* CONFIGURAÇÕES GLOBAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CORPO */
+body {
+    background-color: #ECEDF2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CONTEÚDO PRINCIPAL */
+.conteudo {
+    background-color: #FFFFFF;
+    max-width: 580px;
+    padding: 2rem;
+    border-radius: 0.2rem;
+    margin-top: 1rem;
+}
+
+.conteudo h1, p {
+    text-align: center;
+    color: #172D3D;
+    line-height: 1.5em;
+}
+
+.conteudo h1 {
+    font-size: 1.7em;
+    margin-bottom: 0.7rem;
+}
+
+.conteudo p {
+    margin-bottom: 1.2rem;
+}
+
+/* FORMULÁRIO */
+.conteudo form {}
+
+.conteudo form .informacoes-pessoais {
+    border: none;
+}
+
+.conteudo form .informacoes-pessoais .campo-input {
+    margin-bottom: 2rem;
+}
+
+.conteudo form .informacoes-pessoais .campo-input label {
+    display: block;
+    margin-bottom: 0.7rem;
+}
+
+.conteudo form label strong {
+    color: #607A8B;
+}
+
+.conteudo form .informacoes-pessoais .campo-input input {
+    display: block;
+    border-radius: 0.5rem;
+    outline: none;
+    border: 2px solid #C1E4FE;
+    padding: 0.7rem 1rem;
+    width: 100%;
+    font-size: 0.9em;
+}
+
+.conteudo form .informacoes-pessoais .campo-input input::placeholder {
+    color: #99ABBA;
+}
+
+.conteudo form .informacoes-pessoais .campo-input input:focus-visible {
+    border: 2px solid rgb(157, 187, 209);
+}
+
+.conteudo form .campo-experiencia {
+    border: none;
+}
+
+.conteudo form .campo-experiencia > label {
+    display: block;
+    margin-bottom: 0.7rem;
+}
+
+.conteudo form .campo-experiencia .campo-input {
+    background-color: #F4FAFE;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    outline: none;
+    padding: 0.7rem 1rem;
+    width: 100%;
+}
+
+.conteudo form .campo-experiencia .campo-input input {
+    display: none;
+}
+
+.conteudo form .campo-experiencia .campo-input input + label::before {
+    margin-right: 0.5rem;
+    content: '';
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid #55A8EF;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.conteudo form .campo-experiencia .campo-input input:checked + label::before {
+    background-color: #607A8B;
+}
+
+.conteudo form .campo-experiencia .campo-input label {
+    color: #416179;
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+.conteudo form .campo-experiencia textarea {
+    display: block;
+    border-radius: 0.5rem;
+    outline: none;
+    border: 2px solid #C1E4FE;
+    padding: 0.7rem 1rem;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 2rem;
+}
+
+.conteudo form .campo-experiencia textarea::placeholder {
+    color: #99ABBA;
+}
+
+.conteudo form #botao {
+    display: block;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 2px solid #C1E4FE;
+    color: white;
+    background-color: #607A8B;
+}
+
+@media screen and (max-width: 600px) {
+    .conteudo {
+        margin-top: 0;
+    }
+}
