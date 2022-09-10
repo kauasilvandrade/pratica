@@ -133,34 +133,30 @@ fieldset {
 .login .form .form-row.button-login .fas {
   position: static;
 }
-.register .form .form-row .form-check input[type=checkbox] + label,
-.login .form .form-row .form-check input[type=checkbox] + label {
+.register .form .form-row .form-check input[type=checkbox] + label, .login .form .form-row .form-check input[type=checkbox] + label {
   color: #555;
   cursor: pointer;
   display: block;
 }
-.register .form .form-row .form-check input[type=checkbox],
-.login .form .form-row .form-check input[type=checkbox] {
+.register .form .form-row .form-check input[type=checkbox], .login .form .form-row .form-check input[type=checkbox] {
   display: none;
 }
-.register .form .form-row .form-check input[type=checkbox] + label:before,
-.login .form .form-row .form-check input[type=checkbox] + label:before {
+.register .form .form-row .form-check input[type=checkbox] + label:before, .login .form .form-row .form-check input[type=checkbox] + label:before {
   border-radius: 3px;
   border: 1px solid #e2e2e2;
   color: transparent;
   content: "✔";
   display: inline-block;
   height: 15px;
+  width: 15px;
   margin-right: 5px;
   transition: 0.2s;
   vertical-align: bottom;
-  width: 15px;
   line-height: 16px;
   font-size: 12px;
   text-align: center;
 }
-.register .form .form-row .form-check input[type=checkbox] + label:active:before,
-.login .form .form-row .form-check input[type=checkbox] + label:active:before {
+.register .form .form-row .form-check input[type=checkbox] + label:active:before, .login .form .form-row .form-check input[type=checkbox] + label:active:before {
   transform: scale(1.1);
 }
 .register .form .form-row .form-check input[type=checkbox]:checked + label:before,
