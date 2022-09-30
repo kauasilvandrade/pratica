@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 650px;
+    height: 400px;
+}
+
+.container .caixa {
+    width: 400px;
+    height: 400px;
+}
+
+.container #azul {
+    background-color: #7AF6FF;
+}
+
+.container #laranja {
+    background-color: #F59B5D;
+}
