@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    font-family: 'Inter Tight', sans-serif;
+    background-image: url(../imagens/fundo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header {
+    background-color: #0000008c;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.5rem 0;
+}
+
+header .logo h1 {
+    color: white;
+    font-weight: 400;
+    font-size: 2.2em;
+}
+
+header #open-menu {
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    right: 3rem;
+    top: 1rem;
+}
+
+header #close-menu {
+    z-index: 1;
+    color: white;
+    font-size: 2.5em;
+    cursor: pointer;
+    position: absolute;
+    left: 20rem;
+    top: 0.7rem;
+}
+
+header .menu .lista-menu {
+    display: flex;
+    list-style-type: none;
+    gap: 0 1.3rem;
+    transition: .5s;
+}
+
+header .menu .lista-menu .item-menu {
+    position: relative;
+}
+
+header .menu .lista-menu .item-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+header .menu .lista-menu .item-menu .underline::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 3px;
+    left: 0;
+    bottom: -4px;
+}
+
+header .menu .lista-menu .item-menu .underline::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 3px;
+    left: 0;
+    bottom: -4px;
+    transform-origin: left;
+    background-color: rgb(150, 149, 149);
+    transition: all .3s;
+    transform: scaleX(0);
+}
+
+header .menu .lista-menu .item-menu a:hover ~ .underline::after {
+    color: rgb(150, 149, 149);
+    transform: scaleX(1);
+}
+
+@media screen and (max-width: 768px) {
+
+    header #open-menu {
+        display: inline-block;
+    }
+
+    header .menu .lista-menu {
+        position: fixed;
+        width: 50vw;
+        left: 0;
+        top: 0;
+        background-color: #000000e0;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    header .menu .lista-menu .item-menu a {
+        display: block;
+        text-align: left;
+        padding: 1rem;
+        font-weight: 700;
+    }
+
+    header .menu .lista-menu .item-menu a:hover {
+        background-color: rgba(255, 255, 255, 0.541);
+        color: black;
+        transition: .5s;
+    }
+
+    header .menu .lista-menu .item-menu .underline {
+        display: none;
+    }
+
+}
