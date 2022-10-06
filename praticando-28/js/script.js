@@ -16,3 +16,12 @@ function openMenu() {
         navMenu.style.display = 'block'
     }
 }
+
+// BOTÃO FECHAR MENU
+function closeMenu() {
+    if (navMenu.style.display == 'none') {
+        navMenu.style.display = 'block'
+    } {
+        navMenu.style.display = 'none'
+    }
+}

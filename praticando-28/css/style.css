@@ -51,9 +51,9 @@ header #close-menu {
     font-size: 2.5em;
     cursor: pointer;
     position: absolute;
-    left: 20rem;
+    left: 15rem;
     display: none;
-    top: 0.7rem;
+    top: 0.4rem;
 }
 
 header .menu {
@@ -121,7 +121,7 @@ header .menu .lista-menu .item-menu a:hover ~ .underline::after {
     }
 
     header #close-menu {
-        display: none;
+        display: block;
     }
 
     header .menu {
@@ -130,7 +130,7 @@ header .menu .lista-menu .item-menu a:hover ~ .underline::after {
 
     header .menu .lista-menu {
         position: fixed;
-        width: 24rem;
+        width: 19rem;
         left: 0;
         top: 0;
         background-color: #000000e0;
