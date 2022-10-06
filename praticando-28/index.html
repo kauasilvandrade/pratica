@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
+<body onresize="mudouTamanho()">
 
     <!-- CABEÇALHO -->
     <header>
@@ -20,11 +20,11 @@
 
         </div>
         
-        <i class="material-icons" id="open-menu">menu</i>
+        <i class="material-icons" id="open-menu" onclick="openMenu()">menu</i>
 
         <i class="material-icons" id="close-menu">close</i>
 
-        <nav class="menu">
+        <nav id="navMenu" class="menu">
 
             <ul class="lista-menu">
 

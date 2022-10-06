@@ -37,7 +37,7 @@ header .logo h1 {
 
 header #open-menu {
     color: white;
-    font-size: 2em;
+    font-size: 2.4em;
     cursor: pointer;
     display: none;
     position: absolute;
@@ -52,7 +52,12 @@ header #close-menu {
     cursor: pointer;
     position: absolute;
     left: 20rem;
+    display: none;
     top: 0.7rem;
+}
+
+header .menu {
+    display: block;
 }
 
 header .menu .lista-menu {
@@ -103,13 +108,29 @@ header .menu .lista-menu .item-menu a:hover ~ .underline::after {
 
 @media screen and (max-width: 768px) {
 
+    header {
+        justify-content: space-between;
+    }
+
+    header .logo h1 {
+        margin-left: 2rem;
+    }
+
     header #open-menu {
         display: inline-block;
     }
 
+    header #close-menu {
+        display: none;
+    }
+
+    header .menu {
+        display: none;
+    } 
+
     header .menu .lista-menu {
         position: fixed;
-        width: 50vw;
+        width: 24rem;
         left: 0;
         top: 0;
         background-color: #000000e0;
