@@ -25,8 +25,9 @@ header {
     background-color: #0000008c;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 0.5rem 0;
+    padding-inline: 3rem;
 }
 
 header .logo h1 {
@@ -35,25 +36,8 @@ header .logo h1 {
     font-size: 2.2em;
 }
 
-header #open-menu {
-    color: white;
-    font-size: 2.4em;
-    cursor: pointer;
+header .btn-open {
     display: none;
-    position: absolute;
-    right: 3rem;
-    top: 1rem;
-}
-
-header #close-menu {
-    z-index: 1;
-    color: white;
-    font-size: 2.5em;
-    cursor: pointer;
-    position: absolute;
-    left: 15rem;
-    display: none;
-    top: 0.4rem;
 }
 
 header .menu {
@@ -108,35 +92,59 @@ header .menu .lista-menu .item-menu a:hover ~ .underline::after {
 
 @media screen and (max-width: 768px) {
 
-    header {
-        justify-content: space-between;
+    header .btn-open {
+        background: none;
+        border: none;
+        font: inherit;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: white;
+        padding: 1rem 0;
+        cursor: pointer;
     }
 
-    header .logo h1 {
-        margin-left: 2rem;
+    header .btn-open .hamburguer {
+        border-top: 2px solid white;
+        width: 1.25rem;
     }
 
-    header #open-menu {
-        display: inline-block;
-    }
-
-    header #close-menu {
+    header .btn-open .hamburguer:before, .hamburguer::after {
+        content: " ";
         display: block;
+        width: 1.25rem;
+        height: 0.125rem;
+        background: currentColor;
+        margin-top: 0.3125rem;
+        position: relative;
+        transition: 0.3s;
     }
 
-    header .menu {
-        display: none;
-    } 
+    header .btn-open.active .hamburguer{
+        border-top-color: transparent;
+    }
+
+    header .btn-open.active .hamburguer::before {
+        transform: rotate(135deg);
+    }
+    
+    header .btn-open.active .hamburguer::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
 
     header .menu .lista-menu {
         position: fixed;
         width: 19rem;
-        left: 0;
+        left: -100%;
         top: 0;
         background-color: #000000e0;
-        display: flex;
         flex-direction: column;
         height: 100vh;
+    }
+
+    header .menu .lista-menu.active {
+        left: 0;
     }
 
     header .menu .lista-menu .item-menu a {

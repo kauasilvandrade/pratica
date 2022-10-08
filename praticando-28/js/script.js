@@ -1,27 +1,8 @@
 
-//MUDOU TAMANHO DE TELA
-function mudouTamanho() {
-    if (window.innerWidth >= 768) {
-        navMenu.style.display = 'block'
-    } else {
-        navMenu.style.display = 'none'
-    }
-}
+const btnMenu = document.querySelector('.btn-open');
+const Menu = document.querySelector('.lista-menu');
 
-// BOTÃO ABRIR MENU
-function openMenu() {
-    if (navMenu.style.display == 'block') {
-        navMenu.style.display = 'none'
-    } else {
-        navMenu.style.display = 'block'
-    }
-}
-
-// BOTÃO FECHAR MENU
-function closeMenu() {
-    if (navMenu.style.display == 'none') {
-        navMenu.style.display = 'block'
-    } {
-        navMenu.style.display = 'none'
-    }
-}
+btnMenu.addEventListener('click', () => {
+    btnMenu.classList.toggle('active');
+    Menu.classList.toggle('active')
+})
