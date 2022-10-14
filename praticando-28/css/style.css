@@ -40,6 +40,10 @@ header .btn-open {
     display: none;
 }
 
+header .btn-close {
+    display: none;
+}
+
 header .menu {
     display: block;
 }
@@ -96,7 +100,7 @@ header .menu .lista-menu .item-menu a:hover ~ .underline::after {
         background: none;
         border: none;
         font: inherit;
-        display: flex;
+        display: block;
         align-items: center;
         gap: 0.5rem;
         color: white;
@@ -104,34 +108,60 @@ header .menu .lista-menu .item-menu a:hover ~ .underline::after {
         cursor: pointer;
     }
 
-    header .btn-open .hamburguer {
+    header .menu .btn-open .hamburguer {
         border-top: 2px solid white;
-        width: 1.25rem;
+        width: 1.60rem;
+        display: block;
     }
 
-    header .btn-open .hamburguer:before, .hamburguer::after {
+    header .btn-open .hamburguer::before , .hamburguer::after {
+        content: '';
+        display: block;
+        width: 1.60rem;
+        height: 0.125rem;
+        background: white;
+        margin-top: 0.4125rem;
+        position: relative;
+        transition: 0.3s;
+    }
+
+    header .btn-close {
+        display: block;
+        background-color: transparent;
+        border: none;
+    }
+
+    header .btn-close .x-hamburguer {
+        position: fixed;
+        left: -100%;
+        z-index: 1;
+        top: 1.3rem;
+        transition: .5s;
+    }
+    
+    header .btn-close .x-hamburguer.active {
+        left: 16rem;
+    }
+
+    header .btn-close .x-hamburguer::before, .x-hamburguer::after {
         content: " ";
         display: block;
-        width: 1.25rem;
+        width: 1.60rem;
         height: 0.125rem;
-        background: currentColor;
+        background: white;
         margin-top: 0.3125rem;
         position: relative;
         transition: 0.3s;
     }
 
-    header .btn-open.active .hamburguer{
-        border-top-color: transparent;
-    }
-
-    header .btn-open.active .hamburguer::before {
+    header .btn-close .x-hamburguer::before {
         transform: rotate(135deg);
     }
-    
-    header .btn-open.active .hamburguer::after {
+
+    header .btn-close .x-hamburguer::after {
         transform: rotate(-135deg);
         top: -7px;
-    }
+    } 
 
     header .menu .lista-menu {
         position: fixed;
