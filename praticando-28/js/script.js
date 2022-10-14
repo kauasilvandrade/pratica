@@ -8,6 +8,9 @@ function mudouTamanho() {
         btnMenu.classList.remove('active');
         
         Menu.classList.remove('active');
+
+        btnClose.classList.remove('active');
+
     }
 }
 

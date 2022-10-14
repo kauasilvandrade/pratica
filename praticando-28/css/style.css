@@ -137,6 +137,7 @@ header .menu .lista-menu .item-menu a:hover ~ .underline::after {
         z-index: 1;
         top: 1.3rem;
         transition: .5s;
+        cursor: pointer;
     }
     
     header .btn-close .x-hamburguer.active {
