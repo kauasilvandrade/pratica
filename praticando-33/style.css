@@ -11,7 +11,9 @@ body {
 }
 
 /* CONTEÚDO */
-.conteudo {}
+.conteudo {
+    height: 100vh;
+}
 
 .conteudo__secaoGiftWeek {
     background-color: #05131e;
@@ -157,10 +159,6 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-
-    .conteudo {
-        height: 95vh;
-    }
 
     .conteudo__secaoGiftWeek {
         width: 800px;
