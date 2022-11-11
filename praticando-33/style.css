@@ -1,9 +1,191 @@
+@charset "utf-8";
+
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+}
+
+body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.container {}
+/* CONTEÚDO */
+.conteudo {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.conteudo__secaoGiftWeek {
+    background-color: #05131e;
+    background-image: radial-gradient(at 0 36%,#6f00ff33 0,#0000 50%),radial-gradient(at 22% 74%,#8b047e4d 0,#0000 40%),radial-gradient(at 100% 100%,#ff006f -200px,#0000 65%),radial-gradient(at 62% 100%,#ff006f80 -200px,#0000 65%),radial-gradient(at 0 100%,#6f00ff 0,#0000 50%);
+    padding: 12rem 1.8em 1.1rem 1.8rem;
+    text-align: center;
+}
+
+.conteudo__logo {
+    width: 100%;
+}
+
+.conteudo__secaoGiftWeek h2 {
+    color: white;
+    font-size: 1.5em;
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.conteudo__cardsPromocao {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.conteudo__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #0000004d;
+    position: relative;
+    padding: 2rem 1rem;
+}
+
+.conteudo__card--azul {}
+.conteudo__card--azul::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    padding: 3px;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    background: linear-gradient(190deg,#06a0fc00,#06a0fc);
+}
+
+.conteudo__card--rosa {}
+.conteudo__card--rosa::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    padding: 3px;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    background: linear-gradient(190deg,#ff4f9400,#f20c67);
+}
+
+.card__promocao {
+    color: white;
+    font-weight: 700;
+    font-size: 2.7em;
+    text-transform: uppercase;
+    position: absolute;
+    margin: auto;
+    top: -1.8rem;
+    letter-spacing: -2px;
+}
+
+.conteudo__card h2 {
+    margin-bottom: 1.5rem;
+}
+
+.conteudo__card p {
+    color: #bf8cff;
+    line-height: 1.6em;
+    margin-bottom: 1.5rem;
+}
+
+.card__botao {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    width: 210px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 6px;
+    transition: .5s;
+    outline: none;
+}
+
+.card__botao--azul {
+    background-color: #00a3ff;
+}
+.card__botao--azul:hover {
+    background-color: #0471b1;
+}
+
+.card__botao--rosa {
+    background-color: #c9004f;
+}
+.card__botao--rosa:hover {
+    background-color: #a70445;
+}
+
+@media screen and (min-width: 500px) {
+    
+    .conteudo__secaoGiftWeek {
+        width: 500px;
+        box-shadow: 0px 0px 15px black;
+    }
+
+    .conteudo__card {
+        width: 340px;
+        margin: auto;
+    }
+
+    .card__botao:hover {
+        transform: translateY(0);
+    }
+    .card__botao:hover {
+        transform: translateY(-5px);
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .conteudo__secaoGiftWeek {
+        width: 800px;
+        border-radius: 15px;
+        padding: 2rem 1.8rem;
+        position: relative;
+    }
+
+    .conteudo__secaoGiftWeek::before {
+        content: '';
+        background-image: url(img/logo-gift.webp);
+        background-repeat: no-repeat;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 4rem;
+    }
+
+    .conteudo__logo {
+        width: 50%;
+        position: relative;
+    }
+
+    .conteudo__secaoGiftWeek > h2 {
+        margin-top: 4rem;
+    }
+
+    .conteudo__cardsPromocao {
+        flex-direction: row;
+        align-items: center;
+    }
+}
