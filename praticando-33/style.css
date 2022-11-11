@@ -132,7 +132,6 @@ body {
 @media screen and (min-width: 500px) {
     
     .conteudo {
-        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -158,6 +157,10 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+
+    .conteudo {
+        height: 100vh;
+    }
 
     .conteudo__secaoGiftWeek {
         width: 800px;
