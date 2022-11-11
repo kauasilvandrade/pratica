@@ -11,12 +11,7 @@ body {
 }
 
 /* CONTEÚDO */
-.conteudo {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+.conteudo {}
 
 .conteudo__secaoGiftWeek {
     background-color: #05131e;
@@ -136,6 +131,13 @@ body {
 
 @media screen and (min-width: 500px) {
     
+    .conteudo {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .conteudo__secaoGiftWeek {
         width: 500px;
         box-shadow: 0px 0px 15px black;
