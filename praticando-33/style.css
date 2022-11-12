@@ -12,9 +12,7 @@ body {
 }
 
 /* CONTEÚDO */
-.conteudo {
-    height: 100vh;
-}
+.conteudo {}
 
 .conteudo__secaoGiftWeek {
     background-color: #05131e;
