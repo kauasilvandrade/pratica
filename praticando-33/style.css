@@ -132,7 +132,7 @@ body {
     background-color: #a70445;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 520px) {
 
     .conteudo {
         height: auto;
