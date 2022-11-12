@@ -164,10 +164,6 @@ body {
 
 @media screen and (min-width: 768px) {
 
-    .conteudo {
-        height: 95%;
-    }
-
     .conteudo__secaoGiftWeek {
         width: 800px;
         border-radius: 15px;
