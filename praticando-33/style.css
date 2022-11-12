@@ -161,13 +161,8 @@ body {
     }
 
 }
-@media screen and (orientation: landscape) and (min-width: 500px) { /*formato retrato*/
-    .conteudo__logo {
-        padding-top: 25rem;
-    }
-}
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (orientation: landscape) {
 
     .conteudo__secaoGiftWeek {
         width: 800px;
@@ -201,16 +196,4 @@ body {
         flex-direction: row;
         align-items: center;
     }
-}
-
-@media screen and (orientation: landscape) and (min-width: 768px) { /*formato retrato*/
-    
-    .conteudo__secaoGiftWeek::before {
-        top: 13rem;
-    }
-
-    .conteudo__logo {
-        padding-top: 9rem;
-    }
-    
 }
