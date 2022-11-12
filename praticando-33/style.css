@@ -12,7 +12,9 @@ body {
 }
 
 /* CONTEÚDO */
-.conteudo {}
+.conteudo {
+    height: 100vh;
+}
 
 .conteudo__secaoGiftWeek {
     background-color: #05131e;
@@ -133,6 +135,7 @@ body {
 @media screen and (min-width: 500px) {
 
     .conteudo {
+        height: auto;
         padding: 1rem;
         display: flex;
         justify-content: center;
