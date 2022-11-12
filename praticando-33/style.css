@@ -19,7 +19,7 @@ body {
 .conteudo__secaoGiftWeek {
     background-color: #05131e;
     background-image: radial-gradient(at 0 36%,#6f00ff33 0,#0000 50%),radial-gradient(at 22% 74%,#8b047e4d 0,#0000 40%),radial-gradient(at 100% 100%,#ff006f -200px,#0000 65%),radial-gradient(at 62% 100%,#ff006f80 -200px,#0000 65%),radial-gradient(at 0 100%,#6f00ff 0,#0000 50%);
-    padding: 1.1rem 1.8rem;
+    padding: 1.1rem 1.8rem 2.1rem 1.8rem;
     text-align: center;
 }
 
