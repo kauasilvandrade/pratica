@@ -1,0 +1,43 @@
+.overlay-container {
+    z-index: 10;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: white;
+    text-align: center;
+    transform: translateX(100%);
+    transition: .5s;
+}
+
+/* CLASSE ATIVADA COM JAVASCRIPT */
+.login-container.mover .overlay-container {
+    transform: translateX(0);
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2.25rem;
+    transition: 1s;
+}
+
+.login-container.mover .overlay:nth-child(2) {
+    z-index: -1;
+    opacity: 0;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .overlay-container {
+        display: none;
+    }
+
+}

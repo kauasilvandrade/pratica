@@ -5,13 +5,47 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 3.43em 0;
-}
-
-.form-login {
+    padding: 3.43rem 0;
+    transition: 1s;
     background-color: white;
 }
 
+.form-login {}
+
 .form-register {
-    background-color: tomato;
+    transform: translateX(-100%);
+    z-index: -1;
+    opacity: 0;
+}
+
+.login-container.mover .form-login {
+    transform: translateX(100%);
+    z-index: -1;
+    opacity: 0;
+}
+
+.login-container.mover .form-register {
+    transform: translate(0);
+    opacity: 1;
+    z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .form {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .form-register {
+        position: absolute;
+        background-color: var(--primary-color);
+        transform: translateX(100%);
+        color: white;
+    }
+    
+    .login-container.mover .form-register {
+        transform: translateX(0);
+    }
+
 }
