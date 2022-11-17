@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Teste</title>
+
+    <!-- ÍCONES -->
+    <script src="https://kit.fontawesome.com/ca4876cb59.js" crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
+
+        <!-- LOGO -->
+        <figure class="cabecalho__logo">
+
+            <img src="img/logo.webp" alt="Logo do God of War Ragnarok">
+
+            <figcaption hidden>Logo do God of War Ragnarok</figcaption>
+        
+        </figure>
+
+        <!-- ÁREA DE NAVEGAÇÃO -->
+        <nav class="cabecalho__navegacao">
+
+            <!-- BOTÃO PARA ABRIR MENU -->
+            <button id="openMenu" class="navegacao__botaoMenu">
+                <span class="botaoMenu__hamburguer"></span>
+            </button>
+
+            <!-- LISTA DE LINKS -->
+            <ul class="cabecalho__listaLinks">
+
+                <li class="listaLinks__item">
+                    <a href="#">Sobre</a>
+                </li>
+
+                <li class="listaLinks__item">
+                    <a href="#">História</a>
+                </li>
+
+                <!-- SUB MENU -->
+                <li class="listaLinks__item">
+                    Categorias
+
+                    <!-- BOTÃO PARA ABRIR SUB MENU -->
+                    <button id="openSubMenu" class="item__botaoSubMenu">
+
+                        <i class="fa-solid fa-caret-down"></i>
+
+                        <!-- ICONE DE FECHAR MENU -->
+                        <span class="botaoSubMenu__FecharSubmenu"></span>
+
+                    </button>
+
+                    <!-- SUB MENU -->
+                    <ul class="cabecalho__subMenu">
+
+                        <li class="subMenu__item">
+                            <a href="#">Ação</a>
+                        </li>
+
+                        <li class="subMenu__item">
+                            <a href="#">Aventura</a>
+                        </li>
+
+                        <li class="subMenu__item">
+                            <a href="#">PVP</a>
+                        </li>
+
+                        <li class="subMenu__item">
+                            <a href="#">RPG</a>
+                        </li>
+
+                        <li class="subMenu__item">
+                            <a href="#">MOBA</a>
+                        </li>
+
+                    </ul>
+
+                </li>
+
+                <li class="listaLinks__item">
+                    <a href="#">Gameplays</a>
+                </li>
+
+                <li class="listaLinks__item">
+                    <a href="#">Nossa Loja</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+/* CONFIGURAÇÕES GLOBAIS */
+* {}
+
+/* CORPO */
+body {}
+
+/* CABEÇALHO */
+.cabecalho {}
+
+/* LOGO */
+.cabecalho__logo {}
+
+.cabecalho__logo img {}
+
+.cabecalho__logo figcaption {}
+
+/* ÁREA DE NAVEGAÇÃO */
+.cabecalho__navegacao {}
+
+/* BOTÃO FECHAR MENU */
+.navegacao__botaoMenu {}
+
+.botaoMenu__hamburguer  {}
+
+/* LISTA DE LINKS */
+.cabecalho__listaLinks {}
+
+.listaLinks__item {}
+
+.listaLinks__item a {}
+
+/* SUB MENU */
+.cabecalho__subMenu {}
+
+.subMenu__item {}
+
+.subMenu__item a {}
+
+/* BOTÃO PARA ABRIR SUB MENU */
+.item__botaoSubMenu {}
+
+.item__botaoSubMenu i {}
+
+.botaoSubMenu__FecharSubmenu {}
