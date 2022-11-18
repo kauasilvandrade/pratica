@@ -1,14 +1,13 @@
+const listaMenu = document.querySelector('.cabecalho__listaLinks');
+const imgHamburguer = document.querySelector('.botaoMenu__hamburguer');
 
 // FUNCÃO BOTÃO ABRIR E FECHAR MENU 
 function menuShow(event) {
 
     // MENU
-    const listaMenu = document.querySelector('.cabecalho__listaLinks');
     listaMenu.classList.toggle('ativado');
 
     // MUDAR IMAGEM
-    const imgHamburguer = document.querySelector('.botaoMenu__hamburguer');
-    
     if (listaMenu.classList.contains('ativado')) {
         imgHamburguer.src = "img/x-hamburguer.webp";
         imgHamburguer.style.width = '1.8rem';
@@ -27,9 +26,13 @@ function menuShow(event) {
     event.currentTarget.setAttribute('aria-expanded', ativado);
 
     if (ativado) {
+
         event.currentTarget.setAttribute('aria-label', 'Botão fechar menu');
+
     } else {
+
         event.currentTarget.setAttribute('aria-label', 'Botão abrir menu');
+
     }
 
 }
@@ -41,18 +44,20 @@ btnMenu.addEventListener('click', menuShow);
 
 btnMenu.addEventListener('touchstart', menuShow);
 
+
+const subMenu = document.querySelector('.cabecalho__subMenu');
+
+const abrirSubMenu = document.querySelector('.botaoSubMenu__AbrirSubmenu');
+
+const fecharSubMenu = document.querySelector('.botaoSubMenu__FecharSubmenu');
+
 // FUNCÃO PARA ABRIR O SUB MENU
 function openSubMenu(event) {
     
     // SUB MENU
-    const subMenu = document.querySelector('.cabecalho__subMenu');
     subMenu.classList.toggle('ativado');
 
     // MUDAR ICONE 
-    const abrirSubMenu = document.querySelector('.botaoSubMenu__AbrirSubmenu');
-    const fecharSubMenu = document.querySelector('.botaoSubMenu__FecharSubmenu');
-    
-    
     if (subMenu.classList.contains('ativado')) {
 
         abrirSubMenu.classList.add('ativado');
@@ -76,8 +81,11 @@ function openSubMenu(event) {
     event.currentTarget.setAttribute('aria-expanded', ativado);
 
     if (ativado) {
+
         event.currentTarget.setAttribute('aria-label', 'Botão fechar sub menu');
+
     } else {
+
         event.currentTarget.setAttribute('aria-label', 'Botão abrir sub menu');
     }
 
@@ -89,3 +97,18 @@ const btnSubMenu = document.getElementById('openSubMenu');
 btnSubMenu.addEventListener('click', openSubMenu);
 
 btnSubMenu.addEventListener('touchstart', openSubMenu);
+
+// MUDAR TAMANHO DE TELA
+function mudouTamanho() {
+    if (window.innerWidth >= 768) {
+        
+        listaMenu.classList.remove('ativado');
+
+        subMenu.classList.remove('ativado')
+
+        imgHamburguer.src = "img/hamburguer.webp";
+        
+        imgHamburguer.style.width = '2.2rem';
+
+    }
+}
