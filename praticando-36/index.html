@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Teste</title>
 
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="img/background.jpg" type="image/x-icon">
     <!-- ÍCONES -->
     <script src="https://kit.fontawesome.com/ca4876cb59.js" crossorigin="anonymous"></script>
 
@@ -18,42 +20,49 @@
     <!-- CABEÇALHO -->
     <header class="cabecalho">
 
-        <!-- LOGO -->
-        <figure class="cabecalho__logo">
-
-            <img src="img/logo.webp" alt="Logo do God of War Ragnarok">
-
-            <figcaption hidden>Logo do God of War Ragnarok</figcaption>
-        
-        </figure>
-
         <!-- ÁREA DE NAVEGAÇÃO -->
         <nav class="cabecalho__navegacao">
 
             <!-- BOTÃO PARA ABRIR MENU -->
-            <button id="openMenu" class="navegacao__botaoMenu">
-                <span class="botaoMenu__hamburguer"></span>
+            <button id="openMenu" class="navegacao__botaoMenu"
+            aria-controls="menu"
+            aria-label="Botão abrir menu"
+            aria-expanded="false"
+            aria-haspopup="true">
+                <img src="img/hamburguer.webp" alt="Botão de abrir o Menu" class="botaoMenu__hamburguer">
             </button>
 
             <!-- LISTA DE LINKS -->
-            <ul class="cabecalho__listaLinks">
+            <ul class="cabecalho__listaLinks" id="menu" role="menu">
 
                 <li class="listaLinks__item">
+
                     <a href="#">Sobre</a>
+
+                    <div class="underline"></div>
+
                 </li>
 
                 <li class="listaLinks__item">
+
                     <a href="#">História</a>
+
+                    <div class="underline"></div>
+
                 </li>
 
                 <!-- SUB MENU -->
                 <li class="listaLinks__item">
-                    Categorias
+                    <p>Categorias</p>
 
                     <!-- BOTÃO PARA ABRIR SUB MENU -->
-                    <button id="openSubMenu" class="item__botaoSubMenu">
+                    <button id="openSubMenu" class="item__botaoSubMenu"
+                    aria-label="botão abrir sub menu"
+                    aria-controls="subMenu"
+                    aria-expanded="false"
+                    aria-haspopup="true">
 
-                        <i class="fa-solid fa-caret-down"></i>
+                        <i class="fa-solid fa-caret-down botaoSubMenu__AbrirSubmenu"></i>
 
                         <!-- ICONE DE FECHAR MENU -->
                         <span class="botaoSubMenu__FecharSubmenu"></span>
@@ -61,7 +70,7 @@
                     </button>
 
                     <!-- SUB MENU -->
-                    <ul class="cabecalho__subMenu">
+                    <ul class="cabecalho__subMenu" id="subMenu" role="menu">
 
                         <li class="subMenu__item">
                             <a href="#">Ação</a>
@@ -88,11 +97,19 @@
                 </li>
 
                 <li class="listaLinks__item">
+
                     <a href="#">Gameplays</a>
+
+                    <div class="underline"></div>
+
                 </li>
 
                 <li class="listaLinks__item">
+
                     <a href="#">Nossa Loja</a>
+
+                    <div class="underline"></div>
+
                 </li>
 
             </ul>
@@ -100,6 +117,8 @@
         </nav>
 
     </header>
+
+    <script defer src="app.js"></script>
 
 </body>
 </html>
