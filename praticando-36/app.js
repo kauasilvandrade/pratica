@@ -30,9 +30,8 @@ function menuShow(event) {
         event.currentTarget.setAttribute('aria-label', 'Botão fechar menu');
 
     } else {
-
+        
         event.currentTarget.setAttribute('aria-label', 'Botão abrir menu');
-
     }
 
 }
@@ -104,10 +103,10 @@ function mudouTamanho() {
         
         listaMenu.classList.remove('ativado');
 
-        subMenu.classList.remove('ativado')
+        subMenu.classList.remove('ativado');
 
         imgHamburguer.src = "img/hamburguer.webp";
-        
+
         imgHamburguer.style.width = '2.2rem';
 
     }
