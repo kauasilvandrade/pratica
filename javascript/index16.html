@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivial</title>
+    <link rel="stylesheet" href="style16.css">
+</head>
+<body>
+    
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
+        <h1>Trivia!</h1>
+    </header>
+
+    <main class="conteudo">
+        <div class="container">
+            
+            <!-- MULTIPLA ESCOLHA -->
+            <section class="conteudo__secaoMultiplaEscolha">
+
+                <h2>Part 1: Múltipla escolha</h2>
+
+                <p>Qual é o nome do irmão do Sasuke Uchiha do Anime Naruto?</p>
+
+                <!-- OPÇÕES -->
+                <form action="" class="secaoMultiplaEscolha__formlarioOpcoes">
+
+                    <ul class="formularioOpcoes__lista">
+
+                        <li class="formularioOpcoes__item">
+                            <input type="radio" name="opcoes" id="NarutoUzumaki">
+                            <label for="NarutoUzumaki" class="formulario_opcoes">Naruto Uzumaki</label>
+                            <span></span>
+                        </li>
+
+                        <li class="formularioOpcoes__item">
+                            <input type="radio" name="opcoes" id="HinataHyuga">
+                            <label for="HinataHyuga" class="formulario_opcoes">Hinata Hyuga</label>
+                            <span></span>
+                        </li>
+
+                        <li class="formularioOpcoes__item">
+                            <input type="radio" name="opcoes" id="ShikamaruNara">
+                            <label for="ShikamaruNara" class="formulario_opcoes">Shikamaru Nara</label>
+                            <span></span>
+                        </li>
+                        
+                        <li class="formularioOpcoes__item">
+                            <input type="radio" name="opcoes" id="KaKashiHatake">
+                            <label for="KaKashiHatake" class="formulario_opcoes">KaKashi Hatake</label>
+                            <span></span>
+                        </li>
+
+                        <li class="formularioOpcoes__item">
+                            <input type="radio" name="opcoes" id="ItachiUchiha">
+                            <label for="ItachiUchiha" class="formulario_opcoes">Itachi Uchiha</label>
+                            <span></span>
+                        </li>
+
+                    </ul>
+
+                    <button type="submit" class="formulario_botao">Verifique sua Respota</button>
+
+                </form>
+
+            </section>
+            
+            <!-- RESPOSTA LIVRE -->
+            <section class="conteudo_secaoEscolhaLivre">
+
+                <h2>Part 2: Respota Livre</h2>
+
+                <p>Qual é o nome do Anime em que o nome do protagonita é Tanjiro Kamado?</p>
+
+                <form action="" class="secaoEscolhaLivre__formularioRespotaLivre">
+
+                    <input type="text" name="respotaUsuario" id="respotaUsuario">
+                    <button type="submit" class="formulario_botao" id="btn-secundario">Verifique sua respota</button>
+
+                </form>
+
+            </section>
+
+        </div>
+    </main>
+
+</body>
+</html>

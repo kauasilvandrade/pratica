@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2f2f2f;
+}
+
+/* CABEÇALHO */
+.cabecalho {
+    background-color: rgb(93, 131, 191);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.cabecalho h1 {
+    color: white;
+}
+
+/* CONTEÚDO */
+.conteudo {
+    padding: 3rem;
+}
+
+.conteudo h2 {
+    margin-bottom: 1.2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid black;
+}
+
+.conteudo p {
+    margin-bottom: 2.5rem;
+}
+
+.container {
+    margin: auto;
+    max-width: 1000px;
+    width: 100%;
+}
+
+/* MULTIPLA ESCOLHA */
+.conteudo__secaoMultiplaEscolha {
+    margin-bottom: 1.5rem;
+}
+
+.formularioOpcoes__lista {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.formularioOpcoes__item input {
+    appearance: none;
+}
+
+.formularioOpcoes__item label {
+    border-radius: 5px;
+    background-color: rgb(118, 162, 234);
+    cursor: pointer;
+    padding: 0.4rem;
+    color: white;
+    border: 3px solid transparent;
+}
+
+.formularioOpcoes__item input:checked ~ label {
+    border: 3px solid rgb(56, 77, 111);
+}
+
+.conteudo .formulario_botao {
+    display: block;
+    border-radius: 5px;
+    background-color: gray;
+    cursor: pointer;
+    padding: 0.6rem 0.4rem;
+    color: white;
+    letter-spacing: 1px;
+    border: none;
+}
+
+#btn-secundario {
+    display: inline;
+}
+
+.conteudo .formulario_botao:hover {
+    background-color: rgb(86, 86, 86);
+    transition: .5s;
+}
+
+/* RESPOSTA LIVRE */
+.conteudo_secaoEscolhaLivre input {
+    height: 2.3rem;
+    display: inline-block;
+    padding: 0.5rem;
+    border: 3px solid rgb(56, 77, 111);
+    width: 14rem;
+    border-radius: 4px;
+    margin-right: 0.7rem;
+}
