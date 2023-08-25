@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console</title>
+</head>
+<body>
+    
+    <form method="get" onsubmit="mensagemConsole(); return false;">
+        <h2>Digite uma mensagem</h2>
+        <input id="mensagem" type="text" placeholder="Mensagem">
+        <input type="submit" value="Enviar">
+    </form>
+
+    <script>
+        function mensagemConsole() {
+            let mensagem = document.querySelector("#mensagem").value;
+            console.log("Mensagem: " + mensagem);
+        }
+
+    </script>
+
+</body>
+</html>

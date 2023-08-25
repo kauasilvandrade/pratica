@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escrita dinamica</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="Nome:" autofocus>
+    <p id="nome">
+        
+    </p>
+    <script>
+
+        let input = document.querySelector('input');
+        let nome = document.querySelector('#nome');
+
+        input.addEventListener('keyup', function() {
+
+            if (input.value) {
+                nome.innerHTML = `Olá, ${input.value}`;
+            } else {
+                nome.innerHTML = 'Digite seu nome!';
+            }
+
+        });
+
+    </script>
+</body>
+</html>

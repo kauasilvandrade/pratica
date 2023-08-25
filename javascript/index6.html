@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limit de caracteres</title>
+    <style>
+        body {
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 92vh;
+            width: 99%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h1 {
+            color: black;
+        }
+
+        form {
+            display: flex;
+            padding: 2rem 1rem;
+            box-shadow: 7px 9px 9px #00000038;
+            background: #e6e6df;
+            flex-direction: column;
+            border-radius: 10px;
+            border: 3px solid black;
+            gap: 0.6rem;
+        }
+
+        h2 {
+            letter-spacing: 2px;
+            color: black;
+            margin: 0;
+        }
+
+        #nome{
+            border: 2px solid black;
+            border-radius: 5px;
+            display: block;
+            height: 1.4rem;
+            text-align: center;
+            font-size: 0.88em;
+        }
+
+        div {
+            display: flex;
+        }
+
+        .alertaNome {
+            color: #cd0a0a;
+            text-align: center;
+            font-size: 0.8em;
+        }
+
+        #enviar, #limpar {
+            width: 6rem;
+            margin: auto;
+            cursor: pointer;
+            background: #c6c5c3;
+            padding: 0.2rem;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: .5s;
+            letter-spacing: 1px;
+        }
+
+        #enviar, #limpar:hover {
+            background: #9f9d99;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>ㅤ</h1>
+
+    <form action="" method="get">
+        <h2>Digite seu nome</h2>
+        <input id="nome" type="text" placeholder="Nome: " autocomplete="off" autofocus>
+        <span class="alertaNome">ㅤ</span>
+        <div>
+            <input id="enviar" type="submit" value="Enviar">
+            <input id="limpar" type="reset" value="Limpar">
+        </div>
+    </form>
+
+    <script>
+
+        
+        function saudacao(event) {
+            event.preventDefault();
+            
+            let nomeUsuario = document.querySelector("#nome").value.trim();
+            let alertaUsuario = document.querySelector(".alertaNome");
+            let h1 = document.querySelector("h1");
+            
+            if (nomeUsuario != "") {
+                h1.innerText = "Bem vindo " + nomeUsuario;
+                alertaUsuario.innerText = "ㅤ";
+            } else { 
+                alertaUsuario.innerText = "Digite seu nome!";
+            }
+        }
+
+        function limpar() {
+            let h1 = document.querySelector("h1");
+            h1.innerText = "ㅤ";
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            let form = document.querySelector('form');
+            form.addEventListener('submit', saudacao);
+            form.addEventListener("reset", limpar);
+        });
+
+    </script>
+
+</body>
+</html>

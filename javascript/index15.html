@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+        }
+
+        .mensagemUsuario {
+            margin-bottom: 1rem;
+        }
+
+        form {
+            max-width: 18rem;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 1.2rem;
+            border-radius: 0.5rem;
+            gap: 1rem;
+            text-align: center;
+            box-shadow: 3px 3px 10px #00000099;
+            border: 2px solid black;
+        }
+
+        h1 {
+            color: #000000ba;
+        }
+
+        .inputBox {
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .inputBox input {
+            padding: 0.4rem 0.5rem;
+            width: 100%;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+
+        .inputBox .alertaUsuario {
+            color: #560505;
+            font-size: 0.8em;
+        }
+
+        .inputBox select {
+            width: 100%;
+            padding: 0.4rem;
+            border-radius: 6px;
+            border: 2px solid black;
+        }
+
+        button {
+            padding: 0.4rem 0.5rem;
+            width: 100%;
+            border: 2px solid black;
+            border-radius: 5px;
+            background: #d8d5d5e8;
+            cursor: pointer;
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
+
+        button:hover {
+            background-color: white;
+            transition: .5s;
+        }
+
+    </style>
+</head>
+<body>
+    <span class="mensagemUsuario"></span>
+
+    <form action="" method="get">
+        <h1>Bem vindo</h1>
+        
+        <div class="inputBox">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" autocomplete="name">
+            <span class="alertaUsuario nome"></span>
+        </div>
+        
+        <div class="inputBox">
+            <label for="email">Email</label>
+            <input type="email" id="email" autocomplete="email">
+            <span class="alertaUsuario email"></span>
+        </div>
+        
+        <div class="inputBox">
+            <label for="generos">Gêneros</label>
+            <select id="generos" required>
+                <option value="select" selected disabled>Escolha um Gênero</option>
+                <option value="linear-gradient(to bottom, blue, transparent)">Masculino</option>
+                <option value="linear-gradient(to bottom, pink, transparent)">Feminino</option>
+                <option value="linear-gradient(to bottom, gray, transparent)">Neutro</option>
+            </select>
+            <span class="alertaUsuario genero"></span>
+        </div>
+        
+        <button type="submit">Enviar</button>
+    </form>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const body = document.querySelector('body');
+            const selectElement = document.querySelector('#generos');
+            const formulario = document.querySelector('form');
+            const mensagemUsuario = document.querySelector(".mensagemUsuario");
+            const inputNome = document.querySelector('#nome');
+            const inputEmail = document.querySelector('#email');
+            const alertaNome = document.querySelector('.nome');
+            const alertaEmail = document.querySelector('.email');
+            const alertaGenero = document.querySelector('.genero');
+            const opcaoSelecionada = document.querySelector('#generos option[disabled]');
+
+            selectElement.addEventListener('change', function() {
+                body.style.backgroundImage = this.value;
+            });
+
+            function validarEntrada(nome, email, genero) {
+                const mensagensErro = {
+                    nome: "Digite seu Nome!",
+                    email: "Digite seu Email!",
+                    genero: "Selecione seu Gênero!"
+                };
+
+                alertaNome.innerText = nome.trim() === "" ? mensagensErro.nome : "";
+                alertaEmail.innerText = email.trim() === "" ? mensagensErro.email : "";
+                alertaGenero.innerText = genero === opcaoSelecionada ? mensagensErro.genero : "";
+
+                if (nome.trim() !== "" && email.trim() !== "" && genero !== opcaoSelecionada) {
+                    mensagemUsuario.innerText = `Bem vindo ${nome}`;
+                    mensagemUsuario.style.color = "white";
+                    body.style.backgroundImage = "linear-gradient(to bottom, green, transparent)";
+                    document.querySelector('h1').style.color = 'white';
+                } else {
+                    mensagemUsuario.innerText = "";
+                    body.style.backgroundImage = "linear-gradient(to bottom, #7d0101, transparent)";
+                    document.querySelector('h1').style.color = 'white';
+                }
+            }
+
+            formulario.addEventListener('submit', function(event) {
+                event.preventDefault();
+                const nome = inputNome.value.trim();
+                const email = inputEmail.value.trim();
+                const genero = selectElement.value;
+                validarEntrada(nome, email, genero);
+            });
+        });
+    </script>
+</body>
+</html>

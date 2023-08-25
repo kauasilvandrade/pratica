@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>AppendChild Example</title>
+</head>
+<body>
+    <div id="parentElement">
+        <p>Este é um parágrafo existente.</p>
+    </div>
+
+    <script>
+        // Criar um novo nó de texto
+        const newText = document.createTextNode("Este é um novo texto adicionado usando appendChild.");
+
+        // Obter o elemento pai onde queremos adicionar o novo texto
+        const parentElement = document.getElementById("parentElement");
+
+        // Adicionar o novo texto como filho do elemento pai
+        parentElement.appendChild(newText);
+    </script>
+</body>
+</html>

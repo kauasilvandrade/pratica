@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background</title>
+    <style>
+        :root {
+            --color-red: red;
+            --color-green: green;
+            --color-blue: blue;
+            --color-black: black;
+            --color-white: white;
+            --color-dark: rgba(0, 0, 0, 0.798);
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 98%;
+            height: 96vh;
+        }
+
+        .botoes {
+            position: absolute;
+            left: 1rem;
+            top: 1rem;
+        }
+
+        button {
+            padding: 0.4rem 0.7rem;
+            border-radius: 9px;
+            border: 2px solid black;
+            margin-right: 0.5rem;
+            cursor: pointer;
+            transition: .5s;
+            color: white;
+        }
+
+        #red {
+            background-color: var(--color-red);
+        }
+        #green {
+            background-color: var(--color-green);
+        }
+        #blue {
+            background-color: var(--color-blue);
+        }
+
+        #reset {
+            color: black;
+        }
+        #reset:hover {
+            background-color: var(--color-dark);
+            color: white;
+        }
+
+        #block {
+            width: 250px;
+            height: 250px;
+            background-color: var(--color-black);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="botoes">
+        <button class="color-button" id="red">Red</button>
+        <button class="color-button" id="green">Green</button>
+        <button class="color-button" id="blue">Blue</button>
+        <button id="reset">Reset</button>
+    </div>
+
+    <div id="block">
+
+    </div>
+
+    <script>
+        const body = document.querySelector("body");
+        const block = document.getElementById('block');
+        const colorButtons = document.querySelectorAll('.color-button');
+
+        colorButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const color = getComputedStyle(button).backgroundColor;
+                body.style.backgroundColor = color; // Mantém o fundo da página com a cor do botão clicado
+                block.style.backgroundColor = darkenColor(color); // Aplica uma cor mais escura ao bloco
+            });
+        });
+
+        function darkenColor(color) {
+            const factor = 0.8; // Fator de escurecimento (0 a 1)
+            const rgb = color.match(/\d+/g); // Extrai os valores RGB da cor
+            const darkenedRgb = rgb.map(value => Math.floor(value * factor)); // Calcula os novos valores RGB escurecidos
+            return `rgb(${darkenedRgb.join(", ")})`; // Retorna a nova cor em formato RGB
+        }
+
+        document.getElementById('reset').onclick = function() {
+            body.style.backgroundColor = 'var(--color-white)';
+            block.style.backgroundColor = 'black';
+        };
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+ 
+<!-- Demonstrates programmatic changes to size -->
+ 
+<html lang="en">
+    <head>
+        <title>size</title>
+    </head>
+    <body>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in tincidunt augue. Duis imperdiet, justo ac iaculis rhoncus, erat elit dignissim mi, eu interdum velit sapien nec risus. Praesent ullamcorper nibh at volutpat aliquam. Nam sed aliquam risus. Nulla rutrum nunc augue, in varius lacus commodo in. Ut tincidunt nisi a convallis consequat. Fusce sed pulvinar nulla.
+        </p>
+        <select>
+            <option value="1rem">1 rem</option>
+            <option value="2rem">2 rem</option>
+            <option value="3rem">3 rem</option>
+            <option selected value="initial">Inicial</option>
+            <option value="4rem">4 rem</option>
+            <option value="5rem">5 rem</option>
+            <option value="6rem">6 rem</option>
+        </select>
+        <script>
+ 
+            document.querySelector('select').addEventListener('change', function(event) {
+                document.querySelector('body').style.fontSize = this.value;
+            });
+ 
+        </script>
+    </body>
+</html>
