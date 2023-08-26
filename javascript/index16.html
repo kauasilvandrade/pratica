@@ -24,36 +24,36 @@
                 <p>Qual é o nome do irmão do Sasuke Uchiha do Anime Naruto?</p>
 
                 <!-- OPÇÕES -->
-                <form action="" class="secaoMultiplaEscolha__formlarioOpcoes">
+                <form action="" class="secaoMultiplaEscolha__formlarioOpcoes" >
 
                     <ul class="formularioOpcoes__lista">
 
                         <li class="formularioOpcoes__item">
-                            <input type="radio" name="opcoes" id="NarutoUzumaki">
+                            <input type="radio" name="nomes" id="NarutoUzumaki" data-informacao="Naruto Uzumaki">
                             <label for="NarutoUzumaki" class="formulario_opcoes">Naruto Uzumaki</label>
                             <span></span>
                         </li>
 
                         <li class="formularioOpcoes__item">
-                            <input type="radio" name="opcoes" id="HinataHyuga">
+                            <input type="radio" name="nomes" id="HinataHyuga" data-informacao="Hinata Hyuga">
                             <label for="HinataHyuga" class="formulario_opcoes">Hinata Hyuga</label>
                             <span></span>
                         </li>
 
                         <li class="formularioOpcoes__item">
-                            <input type="radio" name="opcoes" id="ShikamaruNara">
-                            <label for="ShikamaruNara" class="formulario_opcoes">Shikamaru Nara</label>
+                            <input type="radio" name="nomes" id="ShikamaruNara">
+                            <label for="ShikamaruNara" class="formulario_opcoes" data-informacao="Shikamaru Nara">Shikamaru Nara</label>
                             <span></span>
                         </li>
                         
                         <li class="formularioOpcoes__item">
-                            <input type="radio" name="opcoes" id="KaKashiHatake">
+                            <input type="radio" name="nomes" id="KaKashiHatake" data-informacao="KaKashi Hatake">
                             <label for="KaKashiHatake" class="formulario_opcoes">KaKashi Hatake</label>
                             <span></span>
                         </li>
 
                         <li class="formularioOpcoes__item">
-                            <input type="radio" name="opcoes" id="ItachiUchiha">
+                            <input type="radio" name="nomes" id="ItachiUchiha" data-informacao="Itachi Uchiha">
                             <label for="ItachiUchiha" class="formulario_opcoes">Itachi Uchiha</label>
                             <span></span>
                         </li>
@@ -84,6 +84,38 @@
 
         </div>
     </main>
+
+    <script>
+
+        // FORMULARIO DE MULTIPLA ESCOLHA
+        let formularioMultEscolha = document.querySelector('.secaoMultiplaEscolha__formlarioOpcoes');
+        const input = document.querySelectorAll('input[name="nomes"]');
+        let mensagemUsuario = document.querySelectorAll('span');
+
+        function verificarOpcaoCorreta(opcoes) {
+            opcoes.forEach(function (opcao) {
+                opcao.addEventListener('change', function () {
+                    let nome = opcao.getAttribute('data-informacao');
+
+                    if (nome !== "Itachi Uchiha") {
+                        mensagemUsuario.innerText = "Incorreto";
+                        mensagemUsuario.classList.add('opcaoErrada');
+                        mensagemUsuario.classList.remove('opcaoCerta');
+                    } else {
+                        mensagemUsuario.innerText = "Correto";
+                        mensagemUsuario.classList.remove('opcaoErrada');
+                        mensagemUsuario.classList.add('opcaoCerta');
+                    }
+                });
+            });
+        }
+
+        formularioMultEscolha.addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita o envio do formulário
+            verificarOpcaoCorreta(input);
+        });
+
+    </script>
 
 </body>
 </html>

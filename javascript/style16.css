@@ -74,6 +74,18 @@ body {
     border: 3px solid rgb(56, 77, 111);
 }
 
+span.opcaoErrada {
+    display: inherit;
+    margin-top: 1rem;
+    color: red;
+}
+
+span.opcaoCerta {
+    display: inherit;
+    margin-top: 1rem;
+    color: green;
+}
+
 .conteudo .formulario_botao {
     display: block;
     border-radius: 5px;
