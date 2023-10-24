@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Básica</title>
+    <style>
+        body {
+            height: 98vh;
+            background-image: url(fnaf.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    </style>]
+</head>
+<body>
+    <script>
+        
+        let nome = window.prompt('Qual é o seu nome?')
+        if (nome.trim() == "") {
+            window.alert('Digite um nome válido!')
+        } else {
+            window.alert('Bem vindo a minha calculadora ' + nome)
+
+            let n1 = window.prompt('Digite um número: ')
+            let n2 = window.prompt('Digite mais um número: ')
+
+            let soma = parseInt(n1) + parseInt(n2) 
+            window.alert('A soma de ' + n1 + ' + ' + n2 + ' é = ' + soma)
+        }
+
+        
+
+    </script>
+</body>
+</html>
