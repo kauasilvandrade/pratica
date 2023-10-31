@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(3deg, rgb(4 3 28) 0%, rgb(30 30 214) 35%);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .conteudo {
+            background-color: white;
+            border-radius: 10px;
+            padding: 1rem;
+            width: 30rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.3rem;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .inputBox label {
+            font-size: 1.3em;
+            letter-spacing: 1px;
+        }
+
+        .inputBox input {
+            display: inline-block;
+            width: 100%;
+            padding: 0.7rem;
+            font-size: 1.2em;
+            border-radius: 7px;
+            margin-top: 0.5rem;
+            border: 3px solid rgb(0, 21, 255);
+        }
+
+    </style>
+</head>
+<body>
+    <main class="conteudo">
+
+        <h1>Formatação</h1>
+
+        <div class="inputBox">
+            <label for="nome">Digite o seu nome</label>
+            <input type="text" id="nome" autocomplete="off">
+        </div>        
+
+        <div class="formatacao">
+            <h2>Quantidade de letras: </h2>
+        </div>
+
+        <div class="formatacao">
+            <h2>Seu nome em Mainúsculo:</h2>
+        </div>
+
+        <div class="formatacao">
+            <h2>Seu nome em Minúsculo:</h2>
+        </div>
+
+        <div class="inputBox">
+            <label for="salario">Digite o seu Salário</label>
+            <input type="text" id="salario" autocomplete="off">
+        </div>  
+
+        <div class="formatacao">
+            <h2>Salário: </h2>
+        </div>
+
+    </main>
+</body>
+</html>

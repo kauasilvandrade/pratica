@@ -8,16 +8,22 @@
 <body>
     
     <script>
-        let nome = window.prompt('Qual é o seu nome? ')
         
-        let nomeComprimento = nome.length
-        window.alert(`Quantidades de letras do nome ${nome}: ${nomeComprimento}`)
+        let nome = window.prompt('Qual é o seu nome? ')
+       
+        if (nome != "") {
+            let nomeComprimento = nome.length
+            window.alert(`Quantidades de letras do nome ${nome}: ${nomeComprimento}`)
 
-        let nomeMai = nome.toUpperCase()
-        window.alert(`Seu nome em letras Mainúsculas: ${nomeMai}`)
+            let nomeMai = nome.toUpperCase()
+            window.alert(`Seu nome em letras Mainúsculas: ${nomeMai}`)
 
-        let nomeMin = nome.toLowerCase()
-        window.alert(`Seu nome em letras Mainúsculas: ${nomeMin}`)
+            let nomeMin = nome.toLowerCase()
+            window.alert(`Seu nome em letras Mainúsculas: ${nomeMin}`)
+        } else {
+            window.alert('Digite um nome!')
+        }
+        
     </script>
 
 </body>
