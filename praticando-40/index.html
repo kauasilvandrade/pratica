@@ -34,6 +34,16 @@
             text-align: center;
         }
 
+        .formatacao {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .formatacao span {
+            font-size: 1.1em;
+        }
+
         .inputBox label {
             font-size: 1.3em;
             letter-spacing: 1px;
@@ -63,14 +73,17 @@
 
         <div class="formatacao">
             <h2>Quantidade de letras: </h2>
+            <span id="quantLetras"></span>
         </div>
 
         <div class="formatacao">
             <h2>Seu nome em Mainúsculo:</h2>
+            <span id="nomeMai"></span>
         </div>
 
         <div class="formatacao">
             <h2>Seu nome em Minúsculo:</h2>
+            <span id="nomeMin"></span>
         </div>
 
         <div class="inputBox">
@@ -80,8 +93,38 @@
 
         <div class="formatacao">
             <h2>Salário: </h2>
+            <span id="salarioUser"></span>
         </div>
 
     </main>
+    
+    <script>
+        
+        function valueUpdateNome() {
+            let entradaNome = document.getElementById('nome').value
+
+            let quantLetras = entradaNome.length
+            document.getElementById('quantLetras').textContent = quantLetras
+
+            let nomeMai = entradaNome.toUpperCase()
+            document.getElementById('nomeMai').textContent = nomeMai
+
+            let nomeMin = entradaNome.toLowerCase()
+            document.getElementById('nomeMin').textContent = nomeMin
+
+        }
+        document.getElementById('nome').addEventListener('input', valueUpdateNome)
+    
+        function valueUpdateSalario() {
+            let entradaSalario = document.getElementById('salario').value
+            entradaSalario = parseFloat(entradaSalario)
+            
+            let salarioFormatado = entradaSalario.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+            document.getElementById('salarioUser').textContent = salarioFormatado;
+
+        } 
+        document.getElementById('salario').addEventListener('input', valueUpdateSalario) 
+
+    </script>
 </body>
 </html>
