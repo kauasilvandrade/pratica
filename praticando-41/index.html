@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando números</title>
+</head>
+<body>
+    <input type="number" name="n1" id="n1">
+    <input type="number" name="n2" id="n2">
+    <button>Mostrar resultado</button>
+    <div>
+
+    </div>
+
+    <script>
+        let n1 = document.getElementById('n1');
+        let n2 = document.getElementById('n2');
+        let resposta = document.querySelector('div');
+        let btn = document.querySelector('button')
+        
+        btn.addEventListener('click', function() {
+            let soma = Number(n1.value) + Number(n2.value)
+            resposta.innerText = `Resposta: ${soma}`
+        })
+
+    </script>
+</body>
+</html>
