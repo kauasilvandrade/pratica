@@ -3,27 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Somando números</title>
+    <title>Somando Números</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .conteudo {
+            box-shadow: 0px 0px 6px #000000ad;
+            padding: 1rem;
+            border-radius: 5px;
+            text-align: center;
+            border: 3px solid black;
+        }
+
+        .conteudo h2 {
+            font-size: 1.1em;
+            margin-bottom: 1rem;
+        }
+
+        .somatorio {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .somatorio input {
+            border: 3px solid black;
+            padding: 0.5rem;
+            border-radius: 10px;
+            font-size: 1em;
+        } 
+
+        .somatorio .respostaSoma {
+            border: 3px solid black;
+            padding: 0.5rem;
+            border-radius: 10px;
+            width: 5rem;
+            height: 2.34rem;
+            text-align: center;
+        } 
+
+        .conteudo button {
+            margin-top: 1rem;
+            width: 100%;
+            padding: 0.4rem;
+            background-color: white;
+            border: 3px solid black;
+            border-radius: 7px;
+            cursor: pointer;
+            transition: .5s;
+        }
+
+        .conteudo button:hover {
+            background-color: rgb(228, 224, 224);
+        }
+
+        
+    </style>
+
 </head>
 <body>
-    <input type="number" name="n1" id="n1">
-    <input type="number" name="n2" id="n2">
-    <button>Mostrar resultado</button>
-    <div>
+    <main class="conteudo">
 
-    </div>
+        <h2>Somando Números</h2>
+
+        <div class="somatorio">
+
+            <input type="number" name="inputn1" id="inputn1">
+
+            <span>+</span>
+
+            <input type="number" name="inputn2" id="inputn2">
+            
+            <span>=</span>
+
+            <div class="respostaSoma">
+
+            </div>
+
+
+        </div>
+
+        <button>Somar</button>
+
+    </main>
 
     <script>
-        let n1 = document.getElementById('n1');
-        let n2 = document.getElementById('n2');
-        let resposta = document.querySelector('div');
-        let btn = document.querySelector('button')
         
-        btn.addEventListener('click', function() {
-            let soma = Number(n1.value) + Number(n2.value)
-            resposta.innerText = `Resposta: ${soma}`
-        })
+        function somar(){
+            
+            let input1 = document.getElementById('inputn1')
+            let input2 = document.getElementById('inputn2')
+            let n1 = Number(input1.value)
+            let n2 = Number(input2.value)
+            
+            let soma = n1 + n2
+            let resultado = document.querySelector('.respostaSoma')
+            resultado.innerHTML = `<p>${soma}</p>`
+            
+        }
+        
+        let btn = document.querySelector('button')
+        btn.addEventListener('click', somar)
 
     </script>
+
 </body>
 </html>
