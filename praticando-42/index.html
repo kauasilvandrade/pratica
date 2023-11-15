@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olá, Mundo!</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <p>Qual é o nome do protagonista do Anime <strong>Kimetsu no Yaiba? </strong></p>
+    <input type="text" name="nomePersonagem" id="nomePersonagem" placeholder="Resposta: ">
+    <button>Enviar</button>
+    <div>
+
+    </div>
+
+    <script>
+        let resposta = document.querySelector('input')
+        let div = document.querySelector('div')
+
+        let btn = document.querySelector('button')
+        btn.addEventListener('click', function() {
+            if (resposta.value.trim().toUpperCase() === 'TANJIRO') {
+                div.innerText = 'Resposta Correta'
+                div.style.color = 'green'
+            } else {
+                div.innerText = 'Resposta Errada'
+                div.style.color = 'red'
+            }
+        })
+    </script>
+</body>
+</html>
