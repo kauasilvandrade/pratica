@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Verificar o maior entre três números</h1>
+    <h2>Digite 3 números: </h2>
+    <input type="number" name="n1" id="n1" placeholder="Número 1">
+    <input type="number" name="n2" id="n2" placeholder="Número 2">
+    <input type="number" name="n3" id="n3" placeholder="Número 3">
+
+    <button onclick="nMaior()">Mostrar</button>
+
+    <div>
+
+    </div>
+
+    <script>
+        function nMaior() {
+            let n1 = document.getElementById('n1').value
+            let n2 = document.getElementById('n2').value
+            let n3 = document.getElementById('n3').value
+            let numeroMaior;
+
+            if ((n1 > n2) && (n1 > n3)) {
+                numeroMaior = `O número maior é o ${n1}`
+            } else if ((n2 > n1) && (n2 > n3)) {
+                numeroMaior = `O número maior é o ${n2}`
+            } else if ((n3 > n1) && (n3 > n2)) {
+                numeroMaior = `O número maior é o ${n3}`
+            }
+
+            document.querySelector('div').innerHTML = numeroMaior
+        }
+    </script>
+</body>
+</html>

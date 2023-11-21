@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div {
+            margin-top: 1rem;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Verificar se um número é positivo, negativo ou zero</h1>
+    <h2>Digite um número: </h2>
+    <input type="number" name="numero" id="numero">
+    <button onclick="verificar()">Enviar</button>
+    <div>
+
+    </div>
+
+    <script>
+        function verificar() {
+            let n = document.getElementById('numero').value
+            let resultado;
+
+            if (n > 0) {
+                resultado = `O valor ${n} é <strong>Positivo</strong>`
+            } else if (n < 0) {
+                resultado = `O valor ${n} é <strong>Negativo</strong>`
+            } else {
+                resultado = `O valor é 0`
+            }
+            
+            document.querySelector('div').innerHTML = resultado
+        }
+
+    </script>
+</body>
+</html>

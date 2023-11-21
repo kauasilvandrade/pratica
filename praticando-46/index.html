@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        img {
+            width: 400px;
+            height: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Verificar se um triângulo é equilátero, isósceles ou escaleno</h1>
+    <h2>Digite 3 números: </h2>
+    <input type="number" name="n1" id="n1" placeholder="Lado 1: ">
+    <input type="number" name="n2" id="n2" placeholder="Lado 2: ">
+    <input type="number" name="n3" id="n3" placeholder="Lado 3: ">
+    <button onclick="triangulo()">Mostrar</button>
+
+    <div></div>
+
+    <script>
+        function triangulo() {
+            let n1 = document.getElementById('n1').value
+            let n2 = document.getElementById('n2').value
+            let n3 = document.getElementById('n3').value
+            let triangulo;
+
+            if ((n1 == n2) && (n2 == n3)) {
+                triangulo = `<h3>Triângulo Equilátero</h3> <img src="https://static.mundoeducacao.uol.com.br/mundoeducacao/2022/11/ilustracao-de-um-triangulo-equilatero-abc-cuja-area-esta-destacada-em-amarelo.jpg">`
+            } else if ((n1 == n2) && (n1 !== n3)) {
+                triangulo = `<h3>Triângulo Isósceles</h3> <img src="https://matematicabasica.net/wp-content/uploads/2019/02/triangulo-isosceles-1-1.png">`
+            } else if ((n1 != n2) && (n2 != n3) ) {
+                triangulo = `<h3>Triângulo Escaleno</h3> <img src="https://lirte.pesquisa.ufabc.edu.br/matreematica/wp-content/uploads/sites/5/2021/01/triangulo-escaleno-1.png">`
+            }
+            document.querySelector('div').innerHTML = triangulo
+        }
+    </script>
+
+</body>
+</html>

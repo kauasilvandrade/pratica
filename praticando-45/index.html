@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Verificar se um usuário é adulto ou não</h1>
+    <input type="text" name="nome" id="nome" placeholder="Nome: ">
+    <input type="number" name="idade" id="idade" placeholder="Idade: ">
+    <button onclick="verificar()">Mostrar</button>
+
+    <div>
+
+    </div>
+    
+    <script>
+        function verificar() {
+            let nome = document.getElementById('nome').value;
+            let idade = Number(document.getElementById('idade').value);
+            let resposta;
+
+            if (idade >= 18) {
+                resposta = `<p>Nome: <strong>${nome}</strong></p> <p>Você é <strong>Adulto</strong></p>`
+            } else {
+                resposta = `<p>Nome: <strong>${nome}</strong></p> <p>Você não é <strong>Adulto</strong></p>`
+            }
+
+            document.querySelector('div').innerHTML = resposta;
+        }
+    </script>
+
+</body>
+</html>
