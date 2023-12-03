@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.4em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mensagens</h1>
+
+    <label for="msg">Mensagem: </label>
+    <input type="text" name="msg" id="msg" placeholder="Digite a Mensagem">
+
+    <br>
+    <br>
+
+    <label for="nVezes">Quantidade de vezes: </label>
+    <input type="number" name="nVezes" id="nVezes" placeholder="Digite a quantidade de vezes">
+
+    <br>
+    <br>
+
+    <button onclick="mostrar()">Mostrar</button>
+
+    <script>
+
+        function mostrar() {
+            let mensagem = document.getElementById('msg')
+            let quantVezes = document.getElementById('nVezes')
+            let contador = 1
+            
+            while (contador <= quantVezes.value) {
+                let h1 = document.createElement('h1');
+                h1.innerHTML = `${mensagem.value}`
+                document.body.appendChild(h1)
+
+                contador++
+            }
+
+        }
+
+    </script>
+</body>
+</html>
